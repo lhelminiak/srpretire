@@ -17,4 +17,12 @@ class DefaultController extends Controller
     public function homepageAction(Request $request){
         return $this->render('home.html.twig');
     }
+
+
+    /**
+     * @Route("/people", name="people")
+     */
+    public function peoplePageAction(Request $request){
+        return $this->render('people.html.twig');
+    }
 }
