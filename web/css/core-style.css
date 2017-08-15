@@ -2791,7 +2791,8 @@ select option {
     position: absolute;
     text-align: center;
     top: 0;
-    visibility: hidden;
+    /*visibility: hidden;*/
+    opacity:0;
     width: calc(100% - 60px);
     height: 100%;
 }
@@ -2809,16 +2810,26 @@ select option {
 }
 
 .single_choose_us:hover .choose_us_overlay_text {
-    visibility: visible;
-    -webkit-transition-delay: 500ms;
-    transition-delay: 500ms;
-    -webkit-transition-duration: 500ms;
-    transition-duration: 500ms;
+    /*visibility: visible;*/
+    /*-webkit-transition-delay: 500ms;*/
+    /*transition-delay: 500ms;*/
+    /*-webkit-transition-duration: 500ms;*/
+    /*transition-duration: 500ms;*/
+
+
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
 }
 
 .choose_us_overlay_text .table {
     margin-bottom: 0;
 }
+
+
 
 
 /*

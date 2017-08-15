@@ -19,14 +19,14 @@
         });
     }
 
-    var wel_slides = $('.welcome_slides');
-    wel_slides.owlCarousel();
-    wel_slides.on('translate.owl.carousel', function (event) {
+    var owl = $('.welcome_slides');
+    owl.owlCarousel();
+    owl.on('translate.owl.carousel', function (event) {
         $('.owl-item .single_slide .slide_text h2').removeClass('animated').hide();
         $('.owl-item .single_slide .slide_text h3').removeClass('animated').hide();
         $('.owl-item .single_slide .slide_text .btn').removeClass('animated').hide();
     })
-    wel_slides.on('translated.owl.carousel', function (event) {
+    owl.on('translated.owl.carousel', function (event) {
         $('.owl-item.active .single_slide .slide_text h2').addClass('animated custom_slideInUp').show();
         $('.owl-item.active .single_slide .slide_text h3').addClass('animated custom_slideInUp_2').show();
         $('.owl-item.active .single_slide .slide_text .btn').addClass('animated custom_slideInUp_btn_1').show();
@@ -34,16 +34,20 @@
 
     // Testimonials Slider Active Code
     if ($.fn.owlCarousel) {
-        $(".testimonials, .special_dishes_slider, .blog_post_slider").owlCarousel({
+        $(".testimonials, .special_dishes_slider").owlCarousel({
             items: 1,
             margin: 0,
             loop: true,
             nav: false,
             dots: true,
-            autoplay: true,
+            autoplay: false,
             smartSpeed: 1500,
             autoplayTimeout: 8000
-        });        
+        });
+    }
+
+    // Testimonials Slider Active Code
+    if ($.fn.owlCarousel) {
         $(".mini_port_testimonials").owlCarousel({
             items: 2,
             margin: 30,
@@ -62,6 +66,59 @@
                 }
             }
         });
+    }
+
+    // Testimonials Slider Active Code
+    if ($.fn.owlCarousel) {
+        $(".app_screenshots").owlCarousel({
+            items: 5,
+            margin: 30,
+            loop: true,
+            nav: true,
+            navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+            dots: false,
+            autoplay: true,
+            smartSpeed: 800,
+            center: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 3
+                },
+                992: {
+                    items: 5
+                }
+            }
+        });
+    }
+
+    // Fitness Classes Slider Active Code (For Fitness Version)
+    if ($.fn.owlCarousel) {
+        $(".fitness_class_slides, .fitness_advisor_slides").owlCarousel({
+            items: 3,
+            margin: 30,
+            loop: true,
+            nav: true,
+            navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+            dots: false,
+            autoplay: false,
+            autoplayTimeout: 8000,
+            smartSpeed: 800,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 3
+                }
+            }
+        });
+    }
+
+    // Partner Company Slider Active Code
+    if ($.fn.owlCarousel) {
         $(".partner_company_slides").owlCarousel({
             items: 5,
             margin: 30,
@@ -87,46 +144,43 @@
                 }
             }
         });
-        $(".creative_gallery_slider").owlCarousel({
-            items: 4,
+    }
+
+    // Partner Company Slider Active Code
+    if ($.fn.owlCarousel) {
+        $(".blog_post_slider").owlCarousel({
+            items: 1,
             margin: 0,
             loop: true,
-            nav: true,
-            dots: false,
+            nav: false,
+            dots: true,
+            center: true,
             autoplay: true,
-            smartSpeed: 1500,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                576: {
-                    items: 2
-                },
-                768: {
-                    items: 4
-                }
-            }
+            smartSpeed: 800
         });
     }
-
-    // Navigation Active Code
-    if ($.fn.navigation) {
-        $("#navigation1").navigation();
-        $("#navigation5").navigation({
-            hidden: true
-        });
-    }
-
-    $(".btn-show").click(function () {
-        $("#navigation5").data("navigation").toggleOffcanvas();
-    });
-
 
     // Gallery Menu Style Active Code
     $('.portfolio-menu button.btn').on('click', function () {
         $('.portfolio-menu button.btn').removeClass('active');
         $(this).addClass('active');
     })
+
+    // Meanmenu Active Code
+    if ($.fn.meanmenu) {
+        $('.main_menu_area .mainmenu nav').meanmenu({
+            onePage: true
+        });
+    }
+
+    // Onepage Nav Active Code
+    if ($.fn.onePageNav) {
+        $('#nav').onePageNav({
+            currentClass: 'current_page_item',
+            scrollSpeed: 1500,
+            easing: 'easeInOutQuart'
+        });
+    }
 
     // Magnific-popup Video Active Code
     if ($.fn.magnificPopup) {
@@ -144,17 +198,66 @@
                 enabled: true
             }
         });
-        $('.foo_latest_works_img').magnificPopup({
-            type: 'image'
+    }
+
+    // Progress Bar Active Code
+    if ($.fn.barfiller) {
+        $('#bar1').barfiller({
+            tooltip: true,
+            duration: 1000,
+            barColor: '#2c3e50',
+            animateOnResize: true
+        });
+        $('#bar2').barfiller({
+            tooltip: true,
+            duration: 1000,
+            barColor: '#2c3e50',
+            animateOnResize: true
+        });
+        $('#bar3').barfiller({
+            tooltip: true,
+            duration: 1000,
+            barColor: '#2c3e50',
+            animateOnResize: true
+        });
+        $('#bar4').barfiller({
+            tooltip: true,
+            duration: 1000,
+            barColor: '#2c3e50',
+            animateOnResize: true
+        });
+        $('#bar5').barfiller({
+            tooltip: true,
+            duration: 1000,
+            barColor: '#2c3e50',
+            animateOnResize: true
+        });
+        $('#bar6').barfiller({
+            tooltip: true,
+            duration: 1000,
+            barColor: '#2c3e50',
+            animateOnResize: true
         });
     }
 
     // ScrollUp Active Code
     if ($.fn.scrollUp) {
         $.scrollUp({
-            scrollSpeed: 1000,
+            scrollSpeed: 2000,
             easingType: 'easeInOutQuart',
             scrollText: '<i class="ion-ios-arrow-thin-up" aria-hidden="true"></i>'
+        });
+    }
+
+    // wow Active Code
+    if ($(window).width() > 767) {
+        new WOW().init();
+    }
+
+    // Footer Reveal Active Code
+    if ($.fn.footerReveal) {
+        $('.footer_area').footerReveal({
+            shadowOpacity: 0.2
         });
     }
 
@@ -209,7 +312,7 @@
         $('.player').mb_YTPlayer();
     }
 
-    // MatchHeight Active Code
+    // :: 8.0 MatchHeight Active Code
     if ($.fn.matchHeight) {
         $('.item').matchHeight();
     }
@@ -219,7 +322,33 @@
         $.preventDefault();
     });
 
+    // Resume Single Part Active Code
+    $(".resume_single_part").on('click', function () {
+        $(".resume_content_navigation_area").fadeOut('700');
+    })
+    $(".close-profile-animatedModal, .close-skills-animatedModal, .close-portfolio-animatedModal, .close-contact-animatedModal").on('click', function () {
+        $(".resume_content_navigation_area").fadeIn('700');
+    })
+
+    // Maps Hide/Show Active Code
+    $(".map_on_off").on('click', function () {
+        $(".map_contact_address_area").toggleClass('map-open');
+    })
+
     var $window = $(window);
+
+    // Sticky Active Code
+    $window.on('scroll', function () {
+        // Fadeout text code
+        $(".business_startup_wc_text").css("opacity", 1 - $window.scrollTop() / $('.business_startup_wc_text').height());
+        if ($window.scrollTop() > 200) {
+            $('.main_header_area').addClass('sticky slideInDown');
+            $('body').addClass('mobile_menu_on');
+        } else {
+            $('.main_header_area').removeClass('sticky slideInDown');
+            $('body').removeClass('mobile_menu_on');
+        }
+    });
 
     // Fullscreen Active Code
     $window.on('resizeEnd', function () {
