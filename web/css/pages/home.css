@@ -1,0 +1,19 @@
+
+body {
+    margin-top:70px;
+}
+
+
+.main_header_area {
+    background: white;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 500;
+}
+
+
+.choose_us_overlay_text a {
+    color: #0093c9;
+}
