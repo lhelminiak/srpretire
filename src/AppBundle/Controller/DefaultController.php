@@ -25,4 +25,18 @@ class DefaultController extends Controller
     public function peoplePageAction(Request $request){
         return $this->render('people.html.twig');
     }
+
+    /**
+     * @Route("/processes", name="processes")
+     */
+    public function proccessesPageAction(Request $request){
+        return $this->render('processes.html.twig');
+    }
+
+    /**
+     * @Route("/retirement-plan-consulting", name="retirement-plan-consulting")
+     */
+    public function retirementPlanConsultingPageAction(Request $request){
+        return $this->render('retirement-plan-consulting.html.twig');
+    }
 }

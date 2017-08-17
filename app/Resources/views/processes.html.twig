@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" href="{{ asset('css/pages/processes.css') }}">
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- >>>>>>>>>>>>>>>> Breadcumb Area Start <<<<<<<<<<<<<<<< -->
+    <section class="breadcumb_area background-overlay" style="background-image: url(img/people.jpg);">
+        <div id="container" class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcumb_section text-center">
+                        <!-- Breadcumb Page Title -->
+                        <div class="page_title">
+                            <h4>Processes</h4>
+                        </div>
+                        <!-- Breadcumb Page Pagination -->
+                        <ol class="breadcrumb d-inline-block">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active">Processes</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- >>>>>>>>>>>>>>>> Breadcumb Area End <<<<<<<<<<<<<<<< -->
+
+    <!-- >>>>>>>>>>>>>>>> Retirement Plan Consulting Start <<<<<<<<<<<<<<<< -->
+    <section class="about_area section_padding_100" id="about">
+        <div class="container">
+            <div class="about_us_area">
+                <div class="row">
+                    <!-- About Us Area -->
+                    <div class="col-12 col-lg-6 wow fadeInLeft">
+                        <!-- About Us Text Start -->
+                        <div class="about_us_text">
+                            <h3>Retirement Plan Consulting</h3>
+                            <p>At Strategic Retirement Partners, we are different.  We focus exclusively on your Retirement Plans, and issues related to them.  We don’t sell money management services or insurance, we focus our time on making your plan better and your life easier.</p>
+                            <p>Whether it is a Defined Benefit or ESOP plan, a Profit Sharing Plan or a 401(K), we are your outsourced experts.</p>
+                            <a href="#" class="btn default-button-green">Learn More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="about_us_one wow fadeInRight sm-mt-30 xs-mt-30">
+                            <img src="img/bg-img/about-us-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- >>>>>>>>>>>>>>>> Retirement Plan Consulting End <<<<<<<<<<<<<<<< -->
+
+
+
+
+
+{% endblock %}
+
+{% block javascripts %}
+
+    <script type="text/javascript" src="{{ asset('js/pages/processes.js') }}"></script>
+
+{% endblock %}
