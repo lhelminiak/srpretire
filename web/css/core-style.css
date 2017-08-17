@@ -2263,17 +2263,19 @@ ul.children .comment-content {
 .gallery_menu .portfolio-menu button.active,
 .gallery_menu .portfolio-menu button:focus {
     color: #0093c9;
+
 }
 
 .gallery_menu .portfolio-menu button.active:before {
-    background-color: #0093c9;
-    border-radius: 50%;
-    content: "";
-    height: 5px;
-    left: 0;
-    position: absolute;
-    top: 8px;
-    width: 5px;
+    /*background-color: #0093c9;*/
+    /*border-radius: 50%;*/
+    /*content: "";*/
+    /*height: 5px;*/
+    /*left: 0;*/
+    /*position: absolute;*/
+    /*top: 8px;*/
+    /*width: 5px;*/
+
 }
 
 .portfolio-menu {

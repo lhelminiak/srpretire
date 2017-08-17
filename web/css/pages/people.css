@@ -1,3 +1,8 @@
+.container{
+    height: 336px;
+}
+
+
 .background-overlay:before{
     background-color: rgba(0,147,201,0.6);
 }
@@ -17,4 +22,120 @@
 
 .breadcumb_section{
     margin-top: 130px;
+}
+
+#our_story_wrapper {
+    height: 500px;
+    margin-top: 50px;
+}
+
+
+.our_story_content h1{
+    font-size: 4.5rem;
+}
+
+
+.our_story_content hr{
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0093c9;
+    border-radius: 5px;
+    margin-left: 300px;
+    margin-right: 300px;
+
+
+
+}
+
+.our_story_content p {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+#our_team_wrapper{
+    background-color: #F5F5F5;
+    height: 800px;
+}
+
+#our_team_wrapper h1{
+    font-size: 4.5rem;
+
+}
+
+#our_team_wrapper hr {
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0093c9;
+    border-radius: 5px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 50px;
+
+}
+
+#our_team_container {
+    height: 500px;
+    padding-top: 5%;
+
+}
+
+
+
+.map_contact_address_area{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    height: 750px;
+}
+
+.map_contact_address_area h3 {
+    font-size: 4.5rem;
+}
+
+.map_contact_address_area hr {
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0093c9;
+    border-radius: 5px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 50px;
+}
+.map_area {
+    height: 500px;
+}
+
+#overlay {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    top: 20px;
+    left: 20px;
+    height: 400px;
+    width: 250px;
+    overflow: auto;
+}
+
+#location_card{
+    height: 500px;
+}
+
+#location_list{
+    overflow-y: scroll;
+}
+
+#awards_wrapper h3 {
+    font-size: 4.5rem;
+
+}
+
+#awards_wrapper hr {
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0093c9;
+    border-radius: 5px;
+    margin-left: 300px;
+    margin-right: 300px;
 }

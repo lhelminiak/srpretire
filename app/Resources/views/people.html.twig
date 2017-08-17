@@ -1,8 +1,9 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-
+    <link rel="stylesheet" href="{{ asset('assets/bundles/snazzy-info-window/snazzy-info-window.css') }}">
     <link rel="stylesheet" href="{{ asset('css/pages/people.css') }}">
+
 {% endblock %}
 
 {% block body %}
@@ -19,9 +20,8 @@
                         </div>
                         <!-- Breadcumb Page Pagination -->
                         <ol class="breadcrumb d-inline-block">
-                            <li class="breadcrumb-item active">Processes</li>
-                            <li class="breadcrumb-item"><a href="#">Retirement Plan Consulting</a></li>
-                            <li class="breadcrumb-item"><a href="#">Executive Benefits</a></li>
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active">Who We Are</li>
                         </ol>
                     </div>
                 </div>
@@ -30,45 +30,366 @@
     </section>
     <!-- >>>>>>>>>>>>>>>> Breadcumb Area End <<<<<<<<<<<<<<<< -->
 
-    <!-- >>>>>>>>>>>>>>>> Service Details Area Start <<<<<<<<<<<<<<<< -->
-    <div id="service_details_wrapper" class="section_padding_100">
+    <div id="our_story_wrapper">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <!-- Service Details Content Area -->
-                    <div class="service_details_content">
-                        <!-- Service Details Thumb -->
-                        <div class="service_details_thumb">
-                            <img src="img/services-img/service-details.jpg" alt="" class="img-thumbnail">
-                        </div>
-                        <!-- Service Details Text Area -->
-                        <div class="single_part_content mt15">
-                            <h4>Bank Loan</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, illo esse nisi dignissimos laboriosam officiis. Aliquid corporis amet, possimus voluptatem ducimus iste accusantium iusto, eveniet voluptatibus necessitatibus numquam alias distinctio nemo natus accusamus aliquam ea facilis nulla hic cupiditate. In doloremque illo debitis alias iusto, harum quis ad culpa aut suscipit! Ratione labore perspiciatis consequuntur reprehenderit tenetur debitis porro minima.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla optio laudantium in provident, animi? Pariatur dolorum possimus earum illo omnis dolore facilis! Quia quo hic quas non. Quam, aut, rem?</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas itaque, error, sit vel cupiditate, et dolore libero ea, atque laboriosam repudiandae quam excepturi nemo magni debitis sunt.</p>
-                        </div>
-                        <!-- Service Details Text Area -->
-                        <div class="single_part_content">
-                            <h4>Terms &amp; Conditions</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, illo esse nisi dignissimos laboriosam officiis. Aliquid corporis amet, possimus voluptatem ducimus iste accusantium iusto, eveniet voluptatibus necessitatibus numquam alias distinctio nemo natus accusamus aliquam ea facilis nulla hic cupiditate. In doloremque illo debitis alias iusto, harum quis ad culpa aut suscipit! Ratione labore perspiciatis consequuntur reprehenderit tenetur debitis porro minima.</p>
-                        </div>
-                        <!-- Service Details Text Area -->
-                        <div class="single_part_content">
-                            <h4>Conclusion</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, nam, nobis magnam nostrum, velit dolore iure eum voluptatem sit sequi placeat itaque et repellendus blanditiis ut nesciunt eligendi accusantium aspernatur possimus.</p>
-                        </div>
-                        <!-- Service Data Download Area -->
-                        <div class="service_data_dl">
-                            <p>Can't Find your best answer. Download our full stories.</p>
-                            <a href="dummy-data/worksheet.pdf" class="btn default-button-green" download>Download Full PDF Document</a>
-                        </div>
+
+                    <div class="our_story_content text-center">
+                        <h1>Our story</h1>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce finibus erat a ante luctus, ac elementum turpis mattis.
+                            Nullam pellentesque diam eu consequat varius. Donec sodales enim sed suscipit viverra.
+                            Donec fermentum ac odio ut imperdiet. Donec condimentum leo vel viverra tincidunt. In hac habitasse platea dictumst.
+                            Pellentesque accumsan metus a sodales varius. Aliquam nec aliquet neque. Integer metus enim, malesuada nec urna vitae,
+                            laoreet pretium massa. Phasellus eget ante massa. Donec interdum augue tortor, et pharetra sem mattis nec. Quisque eget est at
+                            nisl sollicitudin rhoncus.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+    <div id="our_team_wrapper" >
+        <div id="our_team_container" class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <!-- >>>>>>>>>>>>>>>> Team Member area start <<<<<<<<<<<<<<<< -->
+                    <section class="gallery_area clearfix text-center" id="work">
+
+                        <h1>Our Team</h1>
+                        <hr>
+
+                        <div class="container clearfix">
+                            <div class="gallery_menu">
+                                <div class="text-center portfolio-menu">
+                                    <button class="active btn btn-md" type="button" data-filter="*">All</button>
+                                    <button class="btn btn-md" type="button" data-filter=".web">Leadership</button>
+                                    <button class="btn btn-md" type="button" data-filter=".art">Managing Directors</button>
+                                    <button class="btn btn-md" type="button" data-filter=".bra">Consultants</button>
+                                    <button class="btn btn-md" type="button" data-filter=".app">Relationship Managers</button>
+                                </div>
+                            </div>
+
+                            <div class="row portfolio-column">
+
+                                <!-- Single gallery Item Start -->
+                                <div class="col-12 col-md-4 col-lg-3 column_single_gallery_item mb-30 app wow fadeInUp">
+                                    <img src="img/gallery/1.jpg" alt="">
+                                    <!-- Single gallery Item hover caption -->
+                                    <div class="hover_overlay">
+                                        <div class="table">
+                                            <div class="table_cell">
+                                                <div class="gallery_info">
+                                                    <h5>Firstname LastName</h5>
+                                                    <p>Director</p>
+                                                    <div class="more_details">
+                                                        <a class="btn btn-sm" href="#">More Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="image_zoom_in">
+                                            <a class="gallery_img" href="{{ asset('img/gallery/1.jpg')}}"><i class="pe-7s-expand1" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single gallery Item Start -->
+                                <div class="col-12 col-md-4 col-lg-3 column_single_gallery_item mb-30 art wow fadeInUp">
+                                    <img src="img/gallery/2.jpg" alt="">
+                                    <!-- Single gallery Item hover caption -->
+                                    <div class="hover_overlay">
+                                        <div class="table">
+                                            <div class="table_cell">
+                                                <div class="gallery_info">
+                                                    <h5>Firstname LastName</h5>
+                                                    <p>Director</p>
+                                                    <div class="more_details">
+                                                        <a class="btn btn-sm" href="#">More Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="image_zoom_in">
+                                            <a class="gallery_img" href="img/gallery/2.jpg"><i class="pe-7s-expand1" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single gallery Item Start -->
+                                <div class="col-12 col-md-4 col-lg-3 column_single_gallery_item mb-30 wow bra fadeInUp">
+                                    <img src="img/gallery/3.jpg" alt="">
+                                    <!-- Single gallery Item hover caption -->
+                                    <div class="hover_overlay">
+                                        <div class="table">
+                                            <div class="table_cell">
+                                                <div class="gallery_info">
+                                                    <h5>Firstname LastName</h5>
+                                                    <p>Director</p>
+                                                    <div class="more_details">
+                                                        <a class="btn btn-sm" href="#">More Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="image_zoom_in">
+                                            <a class="gallery_img" href="img/gallery/3.jpg"><i class="pe-7s-expand1" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single gallery Item Start -->
+                                <div class="col-12 col-md-4 col-lg-3 column_single_gallery_item mb-30 wow art fadeInUp">
+                                    <img src="img/gallery/4.jpg" alt="">
+                                    <!-- Single gallery Item hover caption -->
+                                    <div class="hover_overlay">
+                                        <div class="table">
+                                            <div class="table_cell">
+                                                <div class="gallery_info">
+                                                    <h5>Firstname LastName</h5>
+                                                    <p>Director</p>
+                                                    <div class="more_details">
+                                                        <a class="btn btn-sm" href="#">More Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="image_zoom_in">
+                                            <a class="gallery_img" href="img/gallery/4.jpg"><i class="pe-7s-expand1" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single gallery Item Start -->
+                                <div class="col-12 col-md-4 col-lg-3 column_single_gallery_item mb-30 bra wow fadeInUp">
+                                    <img src="img/gallery/5.jpg" alt="">
+                                    <!-- Single gallery Item hover caption -->
+                                    <div class="hover_overlay">
+                                        <div class="table">
+                                            <div class="table_cell">
+                                                <div class="gallery_info">
+                                                    <h5>Firstname LastName</h5>
+                                                    <p>Director</p>
+                                                    <div class="more_details">
+                                                        <a class="btn btn-sm" href="#">More Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="image_zoom_in">
+                                            <a class="gallery_img" href="img/gallery/5.jpg"><i class="pe-7s-expand1" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single gallery Item Start -->
+                                <div class="col-12 col-md-4 col-lg-3 column_single_gallery_item mb-30 art wow fadeInUp">
+                                    <img src="img/gallery/6.jpg" alt="">
+                                    <!-- Single gallery Item hover caption -->
+                                    <div class="hover_overlay">
+                                        <div class="table">
+                                            <div class="table_cell">
+                                                <div class="gallery_info">
+                                                    <h5>Firstname LastName</h5>
+                                                    <p>Director</p>
+                                                    <div class="more_details">
+                                                        <a class="btn btn-sm" href="#">More Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="image_zoom_in">
+                                            <a class="gallery_img" href="img/gallery/6.jpg"><i class="pe-7s-expand1" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single gallery Item Start -->
+                                <div class="col-12 col-md-4 col-lg-3 column_single_gallery_item mb-30 web wow fadeInUp">
+                                    <img src="img/gallery/7.jpg" alt="">
+                                    <!-- Single gallery Item hover caption -->
+                                    <div class="hover_overlay">
+                                        <div class="table">
+                                            <div class="table_cell">
+                                                <div class="gallery_info">
+                                                    <h5>Firstname LastName</h5>
+                                                    <p>Director</p>
+                                                    <div class="more_details">
+                                                        <a class="btn btn-sm" href="#">More Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="image_zoom_in">
+                                            <a class="gallery_img" href="img/gallery/7.jpg"><i class="pe-7s-expand1" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single gallery Item Start -->
+                                <div class="col-12 col-md-4 col-lg-3 column_single_gallery_item mb-30 bra wow fadeInUp">
+                                    <img src="img/gallery/8.jpg" alt="">
+                                    <!-- Single gallery Item hover caption -->
+                                    <div class="hover_overlay">
+                                        <div class="table">
+                                            <div class="table_cell">
+                                                <div class="gallery_info">
+                                                    <h5>Firstname LastName</h5>
+                                                    <p>Director</p>
+                                                    <div class="more_details">
+                                                        <a class="btn btn-sm" href="#">More Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="image_zoom_in">
+                                            <a class="gallery_img" href="img/gallery/8.jpg"><i class="pe-7s-expand1" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            {#<div class="row">#}
+                                {#<div class="col-12 text-center">#}
+                                    {#<a href="#" class="btn default-button-green mb-30">Load More</a>#}
+                                {#</div>#}
+                            {#</div>#}
+
+                        </div>
+                    </section>
+                    <!-- >>>>>>>>>>>>>>>> Team Member area end <<<<<<<<<<<<<<<< -->
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="map_contact_address_area home-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>Our Offices</h3>
+                <hr>
+
+
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <div id="location_card" class="card">
+                    <div class="card-header">
+                        Locations
+                    </div>
+
+                    <div id="location_list" class="list-group list-group-flush">
+                        <a id="arkansas" href="#" class="list-group-item list-group-item-action">Arkansas & Missouri</a>
+                        <a id="central_florida" href="#" class="list-group-item list-group-item-action">Central Florida</a>
+                        <a id="central_texas" href="#" class="list-group-item list-group-item-action">Central Texas</a>
+                        <a id="great_lakes" href="#" class="list-group-item list-group-item-action">Great Lakes</a>
+                        <a id="michigan" href="#" class="list-group-item list-group-item-action">Michigan</a>
+                        <a id="mid_atlantic" href="#" class="list-group-item list-group-item-action">Mid Atlantic</a>
+                        <a id="mid_central" href="#" class="list-group-item list-group-item-action">Mid Central</a>
+                        <a id="midwest" href="#" class="list-group-item list-group-item-action">Midwest</a>
+                        <a id="northeast" href="#" class="list-group-item list-group-item-action">Northeast</a>
+                        <a id="northern_california" href="#" class="list-group-item list-group-item-action">Northern California</a>
+                        <a id="oklahoma" href="#" class="list-group-item list-group-item-action">Oklahoma</a>
+                        <a id="rocky_mountains" href="#" class="list-group-item list-group-item-action">Rocky Mountains</a>
+                        <a id="wisconsin" href="#" class="list-group-item list-group-item-action">Wisconsin</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-9">
+                <div class="map_area" id="googleMap"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="awards_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>Awards</h3>
+                    <hr>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    {#<!-- >>>>>>>>>>>>>>>> Service Details Area Start <<<<<<<<<<<<<<<< -->#}
+    {#<div id="service_details_wrapper" class="section_padding_100">#}
+        {#<div class="container">#}
+            {#<div class="row">#}
+                {#<div class="col-12">#}
+                    {#<!-- Service Details Content Area -->#}
+                    {#<div class="service_details_content">#}
+                        {#<!-- Service Details Thumb -->#}
+                        {#<div class="service_details_thumb">#}
+                            {#<img src="img/services-img/service-details.jpg" alt="" class="img-thumbnail">#}
+                        {#</div>#}
+                        {#<!-- Service Details Text Area -->#}
+                        {#<div class="single_part_content mt15">#}
+                            {#<h4>Bank Loan</h4>#}
+                            {#<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, illo esse nisi dignissimos laboriosam officiis. Aliquid corporis amet, possimus voluptatem ducimus iste accusantium iusto, eveniet voluptatibus necessitatibus numquam alias distinctio nemo natus accusamus aliquam ea facilis nulla hic cupiditate. In doloremque illo debitis alias iusto, harum quis ad culpa aut suscipit! Ratione labore perspiciatis consequuntur reprehenderit tenetur debitis porro minima.</p>#}
+                            {#<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla optio laudantium in provident, animi? Pariatur dolorum possimus earum illo omnis dolore facilis! Quia quo hic quas non. Quam, aut, rem?</p>#}
+                            {#<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas itaque, error, sit vel cupiditate, et dolore libero ea, atque laboriosam repudiandae quam excepturi nemo magni debitis sunt.</p>#}
+                        {#</div>#}
+                        {#<!-- Service Details Text Area -->#}
+                        {#<div class="single_part_content">#}
+                            {#<h4>Terms &amp; Conditions</h4>#}
+                            {#<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, illo esse nisi dignissimos laboriosam officiis. Aliquid corporis amet, possimus voluptatem ducimus iste accusantium iusto, eveniet voluptatibus necessitatibus numquam alias distinctio nemo natus accusamus aliquam ea facilis nulla hic cupiditate. In doloremque illo debitis alias iusto, harum quis ad culpa aut suscipit! Ratione labore perspiciatis consequuntur reprehenderit tenetur debitis porro minima.</p>#}
+                        {#</div>#}
+                        {#<!-- Service Details Text Area -->#}
+                        {#<div class="single_part_content">#}
+                            {#<h4>Conclusion</h4>#}
+                            {#<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, nam, nobis magnam nostrum, velit dolore iure eum voluptatem sit sequi placeat itaque et repellendus blanditiis ut nesciunt eligendi accusantium aspernatur possimus.</p>#}
+                        {#</div>#}
+                        {#<!-- Service Data Download Area -->#}
+                        {#<div class="service_data_dl">#}
+                            {#<p>Can't Find your best answer. Download our full stories.</p>#}
+                            {#<a href="dummy-data/worksheet.pdf" class="btn default-button-green" download>Download Full PDF Document</a>#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+    {#</div>#}
     <!-- >>>>>>>>>>>>>>>> Service Details area End <<<<<<<<<<<<<<<< -->
     </body>
+
+{% endblock %}
+
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('assets/bundles/snazzy-info-window/snazzy-info-window.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/pages/people.js') }}"></script>
+
 
 {% endblock %}
