@@ -1,5 +1,9 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/pages/home.css') }}"/>
+{% endblock %}
+
 {% block body %}
 <!-- Preloader Start -->
 <div id="preloader">
@@ -15,7 +19,7 @@
                 <!-- Logo Area Start -->
                 <div class="col-md-2 col-9">
                     <div class="logo_area">
-                        <a href="index.html"><img src="img/core-img/agency-logo.png" alt=""></a>
+                        <a href="index.html"><img src="img/SRP-Logo.jpg" alt=""></a>
                     </div>
                 </div>
                 <!-- Menu Area Start -->
@@ -44,7 +48,7 @@
 <!-- >>>>>>>>>>>>>>>> Header End <<<<<<<<<<<<<<<< -->
 
 <!-- >>>>>>>>>>>>>>>> Welcome Area Start <<<<<<<<<<<<<<<< -->
-<section class="welcome_area height_600 background-overlay jarallax" id="home" style="background-image: url(img/bg-img/bg-16.jpg);">
+<section class="welcome_area height_600 background-overlay jarallax" id="home" style="background-image: url(img/mountain_view.jpg);">
     <!-- Welcome Text -->
     <div class="table">
         <div class="table_cell">
@@ -75,69 +79,136 @@
 </section>
 <!-- >>>>>>>>>>>>>>>> Welcome Area End <<<<<<<<<<<<<<<< -->
 
-<!-- >>>>>>>>>>>>>>>>>> Special Feature Area Start <<<<<<<<<<<<<<<< -->
-<section class="special_feature_area section_padding_100_70">
-    <div class="container">
-        <div class="row">
 
-            <!-- Single Feature Area Start -->
-            <div class="col-sm-6 col-lg-3">
-                <div class="single_feature item wow fadeInUp" data-wow-delay=".2s">
-                    <div class="feature_img hexagon">
-                        <i class="ion-ios-calculator" aria-hidden="true"></i>
+<!-- >>>>>>>>>>>>>>>> Why Choose Us Area Start <<<<<<<<<<<<<<<< -->
+<section class="why_choose_us_area">
+        <div class="why_choose_us_text_area">
+
+            <!-- Single Why Choose Us Area Start  -->
+            <div class="single_choose_us item" style="background-image: url(img/bg-img/choose-us-1.jpg);">
+                <div class="choose_us_icon_title">
+                    <div class="choose_us_icon hexagon">
+                        <i class="ion-trophy" aria-hidden="true"></i>
                     </div>
-                    <!-- Single Feature Image Area End -->
-                    <div class="feature_text">
-                        <h4>Bank Loan</h4>
-                        <p>Classy is completely creative, clean &amp; 100% responsive website.</p>
+                    <h4>People</h4>
+                </div>
+                <div class="choose_us_overlay_text">
+                    <div class="table">
+                        <div class="table_cell">
+                            <h4>About Us</h4>
+                            <p>Meet the people that make it happen</p>
+                            <a href="#">learn more</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Single Feature Area Start -->
-            <div class="col-sm-6 col-lg-3">
-                <div class="single_feature item wow fadeInUp" data-wow-delay=".4s">
-                    <div class="feature_img hexagon">
-                        <i class="ion-ios-personadd" aria-hidden="true"></i>
+            <!-- Single Why Choose Us Area Start  -->
+            <div class="single_choose_us item" style="background-image: url(img/solutions.jpg);">
+                <div class="choose_us_icon_title">
+                    <div class="choose_us_icon hexagon">
+                        <i class="ion-help-buoy" aria-hidden="true"></i>
                     </div>
-                    <!-- Single Feature Image Area End -->
-                    <div class="feature_text">
-                        <h4>Business Advisor</h4>
-                        <p>Classy is completely creative, clean &amp; 100% responsive website.</p>
+                    <h4>Solutions</h4>
+                </div>
+                <div class="choose_us_overlay_text">
+                    <div class="table">
+                        <div class="table_cell">
+                            <h4>What We Do</h4>
+                            <p>Learn the many ways that we can help you</p>
+                            <a href="#">learn more</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Single Feature Area Start -->
-            <div class="col-sm-6 col-lg-3">
-                <div class="single_feature item wow fadeInUp" data-wow-delay=".6s">
-                    <div class="feature_img hexagon">
-                        <i class="ion-earth" aria-hidden="true"></i>
+            <!-- Single Why Choose Us Area Start  -->
+            <div class="single_choose_us item" style="background-image: url(img/lets_connect.jpg);">
+                <div class="choose_us_icon_title">
+                    <div class="choose_us_icon hexagon">
+                        <i class="ion-eye" aria-hidden="true"></i>
                     </div>
-                    <!-- Single Feature Image Area End -->
-                    <div class="feature_text">
-                        <h4>Online Consulting</h4>
-                        <p>Classy is completely creative, clean &amp; 100% responsive website.</p>
+                    <h4>Let's Connect</h4>
+                </div>
+                <div class="choose_us_overlay_text">
+                    <div class="table">
+                        <div class="table_cell">
+                            <h4 class="fadeIn">Let's Connect</h4>
+                            <p class="fadeIn">Get in contact with us and see what we're up to in our blog!</p>
+                            <a href="#">learn more</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Single Feature Area Start -->
-            <div class="col-sm-6 col-lg-3">
-                <div class="single_feature item wow fadeInUp" data-wow-delay=".8s">
-                    <div class="feature_img hexagon">
-                        <i class="ion-ios-lightbulb" aria-hidden="true"></i>
-                    </div>
-                    <!-- Single Feature Image Area End -->
-                    <div class="feature_text">
-                        <h4>Financial Planning</h4>
-                        <p>Classy is completely creative, clean &amp; 100% responsive website.</p>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
 </section>
+<!-- >>>>>>>>>>>>>>>> Why Choose Us Area Start <<<<<<<<<<<<<<<< -->
+
+
+<!-- >>>>>>>>>>>>>>>>>> Special Feature Area Start <<<<<<<<<<<<<<<< -->
+{#<section class="special_feature_area section_padding_100_70">#}
+    {#<div class="container">#}
+        {#<div class="row">#}
+
+            {#<!-- Single Feature Area Start -->#}
+            {#<div class="col-sm-6 col-lg-3">#}
+                {#<div class="single_feature item wow fadeInUp" data-wow-delay=".2s">#}
+                    {#<div class="feature_img hexagon">#}
+                        {#<i class="ion-ios-calculator" aria-hidden="true"></i>#}
+                    {#</div>#}
+                    {#<!-- Single Feature Image Area End -->#}
+                    {#<div class="feature_text">#}
+                        {#<h4>Bank Loan</h4>#}
+                        {#<p>Classy is completely creative, clean &amp; 100% responsive website.</p>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+
+            {#<!-- Single Feature Area Start -->#}
+            {#<div class="col-sm-6 col-lg-3">#}
+                {#<div class="single_feature item wow fadeInUp" data-wow-delay=".4s">#}
+                    {#<div class="feature_img hexagon">#}
+                        {#<i class="ion-ios-personadd" aria-hidden="true"></i>#}
+                    {#</div>#}
+                    {#<!-- Single Feature Image Area End -->#}
+                    {#<div class="feature_text">#}
+                        {#<h4>Business Advisor</h4>#}
+                        {#<p>Classy is completely creative, clean &amp; 100% responsive website.</p>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+
+            {#<!-- Single Feature Area Start -->#}
+            {#<div class="col-sm-6 col-lg-3">#}
+                {#<div class="single_feature item wow fadeInUp" data-wow-delay=".6s">#}
+                    {#<div class="feature_img hexagon">#}
+                        {#<i class="ion-earth" aria-hidden="true"></i>#}
+                    {#</div>#}
+                    {#<!-- Single Feature Image Area End -->#}
+                    {#<div class="feature_text">#}
+                        {#<h4>Online Consulting</h4>#}
+                        {#<p>Classy is completely creative, clean &amp; 100% responsive website.</p>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+
+            {#<!-- Single Feature Area Start -->#}
+            {#<div class="col-sm-6 col-lg-3">#}
+                {#<div class="single_feature item wow fadeInUp" data-wow-delay=".8s">#}
+                    {#<div class="feature_img hexagon">#}
+                        {#<i class="ion-ios-lightbulb" aria-hidden="true"></i>#}
+                    {#</div>#}
+                    {#<!-- Single Feature Image Area End -->#}
+                    {#<div class="feature_text">#}
+                        {#<h4>Financial Planning</h4>#}
+                        {#<p>Classy is completely creative, clean &amp; 100% responsive website.</p>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+    {#</div>#}
+{#</section>#}
 <!-- >>>>>>>>>>>>>>>> Special Feature Area End <<<<<<<<<<<<<<<< -->
 
 <!-- >>>>>>>>>>>>>>>> About Us Area Start <<<<<<<<<<<<<<<< -->
@@ -246,67 +317,7 @@
 </section>
 <!-- >>>>>>>>>>>>>>>> About Us Area End <<<<<<<<<<<<<<<< -->
 
-<!-- >>>>>>>>>>>>>>>> Why Choose Us Area Start <<<<<<<<<<<<<<<< -->
-<section class="why_choose_us_area">
-    <div class="why_choose_us_text_area">
 
-        <!-- Single Why Choose Us Area Start  -->
-        <div class="single_choose_us item" style="background-image: url(img/bg-img/choose-us-1.jpg);">
-            <div class="choose_us_icon_title">
-                <div class="choose_us_icon hexagon">
-                    <i class="ion-trophy" aria-hidden="true"></i>
-                </div>
-                <h4>Award Winning</h4>
-            </div>
-            <div class="choose_us_overlay_text">
-                <div class="table">
-                    <div class="table_cell">
-                        <h4>Award Winning</h4>
-                        <p>Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with classy.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Single Why Choose Us Area Start  -->
-        <div class="single_choose_us item" style="background-image: url(img/bg-img/choose-us-2.jpg);">
-            <div class="choose_us_icon_title">
-                <div class="choose_us_icon hexagon">
-                    <i class="ion-help-buoy" aria-hidden="true"></i>
-                </div>
-                <h4>King Support</h4>
-            </div>
-            <div class="choose_us_overlay_text">
-                <div class="table">
-                    <div class="table_cell">
-                        <h4>King Support</h4>
-                        <p>Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with classy.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Single Why Choose Us Area Start  -->
-        <div class="single_choose_us item" style="background-image: url(img/bg-img/choose-us-3.jpg);">
-            <div class="choose_us_icon_title">
-                <div class="choose_us_icon hexagon">
-                    <i class="ion-eye" aria-hidden="true"></i>
-                </div>
-                <h4>Retina Ready</h4>
-            </div>
-            <div class="choose_us_overlay_text">
-                <div class="table">
-                    <div class="table_cell">
-                        <h4 class="fadeIn">Retina Ready</h4>
-                        <p class="fadeIn">Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with classy.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- >>>>>>>>>>>>>>>> Why Choose Us Area Start <<<<<<<<<<<<<<<< -->
 
 <!-- >>>>>>>>>>>>>>>> Service Details area start <<<<<<<<<<<<<<<< -->
 <div id="service_details_wrapper">
