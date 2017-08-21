@@ -39,4 +39,12 @@ class DefaultController extends Controller
     public function retirementPlanConsultingPageAction(Request $request){
         return $this->render('retirement-plan-consulting.html.twig');
     }
+
+
+    /**
+     * @Route("/technology", name="techology")
+     */
+    public function technologyPageAction(Request $request){
+        return $this->render('technology.html.twig');
+    }
 }
