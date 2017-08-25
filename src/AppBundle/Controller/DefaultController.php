@@ -47,4 +47,11 @@ class DefaultController extends Controller
     public function technologyPageAction(Request $request){
         return $this->render('technology.html.twig');
     }
+
+    /**
+     * @Route("/your-account", name="your-account")
+     */
+    public function yourAccountPageAction(Request $request){
+        return $this->render('your-account.html.twig');
+    }
 }
