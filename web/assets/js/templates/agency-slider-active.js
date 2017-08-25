@@ -1,8 +1,8 @@
 (function ($) {
     'use strict';
-    
+
     $('#slidea').slidea({
-        autoplay: false,
+        autoplay: true,
         layout: "fluid",
         layoutSettings: {
             anchor: 'center',
@@ -34,48 +34,48 @@
             '#default_slidea_slide_one': {
                 background: {
                     0: {
-                        duration: 8000,
+                        duration: 7000
                     }
-                },               
+                },
                 object: {
                     '#title-one': {
                         start: 1000,
-                        initial: "y 30%, opacity 0, duration 500",
-                        out: "y 30%, opacity 0, duration 500"
+                        initial: "y -100, opacity 0, easing easeOutQuad, duration 500",
+                        out: "y -100, opacity 0, easing easeOutQuad, duration 500"
                     },
                     '#description-one': {
-                        start: 1500,
-                        initial: "y -30%, opacity 0, duration 500",
-                        out: "y -30%, opacity 0, duration 500"
+                        start: 1000,
+                        initial: "y -100, opacity 0, easing easeOutQuad, duration 500",
+                        out: "y -100, opacity 0, easing easeOutQuad, duration 500"
                     },
                     '#btn-one': {
-                        start: 2000,
-                        initial: "y 30%, opacity 0, duration 500",
-                        out: "y 30%, opacity 0, duration 500"
+                        start: 1000,
+                        initial: "y 100, opacity 0, easing easeOutQuad, duration 500",
+                        out: "y 100, opacity 0, easing easeOutQuad, duration 500"
                     }
                 }
             },
             '#default_slidea_slide_two': {
                 background: {
                     0: {
-                        duration: 8000
+                        duration: 7000
                     }
                 },
                 object: {
                     '#title-two': {
                         start: 1000,
-                        initial: "opacity 0, y -50, easing easeOutQuad, duration 500",
-                        out: "opacity 0, y -50, easing easeOutQuad, duration 500"
+                        initial: "opacity 0, y -50, easing easeOutQuad, duration 600",
+                        out: "opacity 0, y -50, easing easeOutQuad, duration 600"
                     },
                     '#description-two': {
                         start: 1500,
-                        initial: 'opacity 0, y 100%',
-                        out: 'opacity 0, y 100%'
+                        initial: 'opacity 0, y 100%, duration 600',
+                        out: 'opacity 0, y 100%, duration 600'
                     },
                     '#btn-two': {
                         start: 2000,
-                        initial: 'opacity 0, x -50',
-                        out: 'opacity 0, x -50'
+                        initial: 'opacity 0, easing easeInOutBack, x -50',
+                        out: 'opacity 0, easing easeInOutBack, x -50'
                     }
                 }
             }

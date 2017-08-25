@@ -1,7 +1,10 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-<link rel="stylesheet" href="{{ asset('css/pages/home.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/pages/home.css') }}"/>
+    <link href="{{ asset('css/slidea/slidea.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/slidea/themes/default.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/slidea/ui/default.css') }}" rel="stylesheet">
 {% endblock %}
 
 {% block body %}
@@ -29,13 +32,13 @@
                             <nav>
                                 <ul id="nav">
                                     <li class="current_page_item"><a href="#home">Home</a></li>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#service">Service</a></li>
-                                    <li><a href="#work">Works</a></li>
-                                    <li><a href="#advisor">Team</a></li>
-                                    <li><a href="#price">Price</a></li>
-                                    <li><a href="#blog">News</a></li>
-                                    <li><a href="#contact">Contact</a></li>
+                                    {#<li><a href="#about">About</a></li>#}
+                                    <li><a href="#service">Solutions</a></li>
+                                    {#<li><a href="#work">Works</a></li>#}
+                                    <li><a href="#advisor">About Us</a></li>
+                                    {#<li><a href="#price">Price</a></li>#}
+                                    {#<li><a href="#blog"></a></li>#}
+                                    <li><a href="#contact">Lets Connect</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -48,54 +51,110 @@
 <!-- >>>>>>>>>>>>>>>> Header End <<<<<<<<<<<<<<<< -->
 
 <!-- >>>>>>>>>>>>>>>> Welcome Area Start <<<<<<<<<<<<<<<< -->
-<section class="welcome_area height_600 background-overlay jarallax" id="home" style="background-image: url(img/mountain_view.jpg);">
-    <!-- Welcome Text -->
-    <div class="table">
-        <div class="table_cell">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm">
-                        <div class="welcome_text white item">
-                            <h2>Create your website beautifully with Classy</h2>
-                            <p>Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with it.</p>
-                            <a href="#" class="btn default-button" role="button">Discover More</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm hidden-xs">
-                        <div class="wel_video item text-center">
-                            <div class="table">
-                                <div class="table_cell">
-                                    <!-- Video Link -->
-                                    <a href="https://www.youtube.com/watch?v=ru3cr01DbWo" class="video_btn wow fadeInUp" data-wow-delay="0.2s"><i class="ion-play" aria-hidden="true"></i></a>
-                                    <p>Watch this video. It's only take 50sec</p>
+{#<section class="welcome_area height_600 background-overlay jarallax" id="home" style="background-image: url(img/mountain_view.jpg);">#}
+    {#<!-- Welcome Text -->#}
+    {#<div class="table">#}
+        {#<div class="table_cell">#}
+            {#<div class="container">#}
+                {#<div class="row">#}
+                    {#<div class="col-12 col-sm">#}
+                        {#<div class="welcome_text white item">#}
+                            {#<h2>Let Us Help You Take The Next Step In Your life</h2>#}
+                            {#<p>sub heading</p>#}
+                            {#<a href="#" class="btn default-button" role="button">Discover More</a>#}
+                        {#</div>#}
+                    {#</div>#}
+                    {#<div class="col-12 col-sm hidden-xs">#}
+                        {#<div class="wel_video item text-center">#}
+                            {#<div class="table">#}
+                                {#<div class="table_cell">#}
+                                    {#<!-- Video Link -->#}
+                                    {#<a href="https://www.youtube.com/watch?v=ru3cr01DbWo" class="video_btn wow fadeInUp" data-wow-delay="0.2s"><i class="ion-play" aria-hidden="true"></i></a>#}
+                                    {#<p>Watch our video!</p>#}
+                                {#</div>#}
+                            {#</div>#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+    {#</div>#}
+{#</section>#}
+<!-- >>>>>>>>>>>>>>>> Welcome Area End <<<<<<<<<<<<<<<< -->
+    <section class="welcome_area height_600" id="home">
+        <div class="slidea" id="slidea">
+
+            <!-- Slidea Slide -->
+            <div class="slidea-slide" id="default_slidea_slide_one">
+                <div class="slidea-content slidea-content-center">
+                    <div class="slidea-content-container">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="text-left">
+                                        <div class="s-obj default-title" id="title-one">
+                                            <h2>Let Us Plan <span>Your Future</span></h2>
+                                        </div>
+                                        <div class="s-obj default-description midnight_blue" id="description-one">
+                                            <p>Rest easy knowing your future is in good hands</p>
+                                        </div>
+                                        <div class="s-obj" id="btn-one">
+                                            <a href="#" class="btn default-button">Discover More</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Background Image -->
+                <img class="slidea-background" src="img/mountain_view.jpg" alt="">
+            </div>
+
+            <!-- Slidea Slide -->
+            <div class="slidea-slide" id="default_slidea_slide_two">
+                <div class="slidea-content slidea-content-center">
+                    <div class="slidea-content-container">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-6 ml-md-auto text-right">
+                                    <div class="s-obj default-title" id="title-two">
+                                        <h2>Take a look at our video </h2>
+                                    </div>
+                                    <div class="s-obj default-description" id="description-two">
+                                        <p>See some of the things that we do here!</p>
+                                    </div>
+                                    <div class="s-obj" id="btn-two">
+                                        <a href="#" class="btn default-button">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Background Image -->
+                <img class="slidea-background" src="img/couple_beach.jpg" alt="">
             </div>
         </div>
-    </div>
-</section>
-<!-- >>>>>>>>>>>>>>>> Welcome Area End <<<<<<<<<<<<<<<< -->
-
+    </section>
+    <!-- >>>>>>>>>>>>>>>> Welcome Area End <<<<<<<<<<<<<<<< -->
 
 <!-- >>>>>>>>>>>>>>>> Why Choose Us Area Start <<<<<<<<<<<<<<<< -->
 <section class="why_choose_us_area">
         <div class="why_choose_us_text_area">
 
             <!-- Single Why Choose Us Area Start  -->
-            <div class="single_choose_us item" style="background-image: url(img/bg-img/choose-us-1.jpg);">
+            <div class="single_choose_us item" style="background-image: url(img/team_photo.jpg);">
                 <div class="choose_us_icon_title">
                     <div class="choose_us_icon hexagon">
-                        <i class="ion-trophy" aria-hidden="true"></i>
+                        <i class="ion-ios-people-outline" aria-hidden="true"></i>
                     </div>
-                    <h4>People</h4>
+                    <h4>Who We Are</h4>
                 </div>
                 <div class="choose_us_overlay_text">
                     <div class="table">
                         <div class="table_cell">
-                            <h4>About Us</h4>
+                            <h4>Who We Are</h4>
                             <p>Meet the people that make it happen</p>
                             <a href="#">learn more</a>
                         </div>
@@ -107,9 +166,9 @@
             <div class="single_choose_us item" style="background-image: url(img/solutions.jpg);">
                 <div class="choose_us_icon_title">
                     <div class="choose_us_icon hexagon">
-                        <i class="ion-help-buoy" aria-hidden="true"></i>
+                        <i class="ion-ribbon-b" aria-hidden="true"></i>
                     </div>
-                    <h4>Solutions</h4>
+                    <h4>What We Do</h4>
                 </div>
                 <div class="choose_us_overlay_text">
                     <div class="table">
@@ -126,15 +185,15 @@
             <div class="single_choose_us item" style="background-image: url(img/lets_connect.jpg);">
                 <div class="choose_us_icon_title">
                     <div class="choose_us_icon hexagon">
-                        <i class="ion-eye" aria-hidden="true"></i>
+                        <i class="ion-android-favorite" aria-hidden="true"></i>
                     </div>
-                    <h4>Let's Connect</h4>
+                    <h4>How We Do It</h4>
                 </div>
                 <div class="choose_us_overlay_text">
                     <div class="table">
                         <div class="table_cell">
-                            <h4 class="fadeIn">Let's Connect</h4>
-                            <p class="fadeIn">Get in contact with us and see what we're up to in our blog!</p>
+                            <h4 class="fadeIn">How We Do It</h4>
+                            <p class="fadeIn">See the technology and procedures that make it happen!</p>
                             <a href="#">learn more</a>
                         </div>
                     </div>
@@ -220,7 +279,7 @@
                 <div class="col-12 col-lg-6 item">
                     <!-- About Us Text Start -->
                     <div class="about_us_text">
-                        <h3>Welcome to Classy</h3>
+                        <h3>Welcome to SRP</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto laborum maiores nulla natus a. Aliquid enim dicta veniam eum harum repudiandae doloremque quaerat nobis necessitatibus similique, aut error blanditiis adipisci ab consequatur dolorem ducimus molestiae.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis possimus accusantium dignissimos, sit reiciendis recusandae eaque et dolores vero minus, enim a dicta, fugiat cupiditate quasi corporis maiores omnis. Consectetur.</p>
                         <a href="#" class="">Learn More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
@@ -228,14 +287,11 @@
                 </div>
                 <div class="col-12 col-lg-6 item">
                     <div class="about_us_thumb sm-mt-30 xs-mt-30">
-                        <img src="img/bg-img/about-us-2.jpg" alt="">
-                        <div class="about_us_thumb_2">
-                            <img src="img/bg-img/about-us.jpg" alt="">
-                        </div>
+                        <img src="img/office_photo.jpg" alt="">
                     </div>
                 </div>
             </div>
-
+            Submit an RFP, Find an Advisor, and Join Our Team
             <div class="our_speciality_area">
                 <div class="row">
                     <!-- Single Speciality Area Start -->
@@ -245,8 +301,8 @@
                                 <i class="ion-android-laptop" aria-hidden="true"></i>
                             </div>
                             <div class="single_speciality_text">
-                                <h5>Super Responsive</h5>
-                                <p>Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with classy.</p>
+                                <h5>Submit an RFP</h5>
+                                <p>Learn how to submit an RFP</p>
                             </div>
                         </div>
                     </div>
@@ -257,8 +313,8 @@
                                 <i class="fa fa-code" aria-hidden="true"></i>
                             </div>
                             <div class="single_speciality_text">
-                                <h5>Bootstrap 4</h5>
-                                <p>Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with classy.</p>
+                                <h5>Find an Advisor</h5>
+                                <p>Let's find you the right fit!</p>
                             </div>
                         </div>
                     </div>
@@ -269,44 +325,8 @@
                                 <i class="ion-code" aria-hidden="true"></i>
                             </div>
                             <div class="single_speciality_text">
-                                <h5>Valid HTML5/CSS3</h5>
-                                <p>Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with classy.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single Speciality Area Start -->
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="single_speciality item">
-                            <div class="single_speciality_icon">
-                                <i class="ion-ios-color-wand" aria-hidden="true"></i>
-                            </div>
-                            <div class="single_speciality_text">
-                                <h5>Awesome Unique Design</h5>
-                                <p>Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with classy.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single Speciality Area Start -->
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="single_speciality item">
-                            <div class="single_speciality_icon">
-                                <i class="ion-android-sync" aria-hidden="true"></i>
-                            </div>
-                            <div class="single_speciality_text">
-                                <h5>All Browser Compatibility</h5>
-                                <p>Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with classy.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single Speciality Area Start -->
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="single_speciality item">
-                            <div class="single_speciality_icon">
-                                <i class="ion-umbrella" aria-hidden="true"></i>
-                            </div>
-                            <div class="single_speciality_text">
-                                <h5>Unlimited Possibilities</h5>
-                                <p>Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with classy.</p>
+                                <h5>Join Our Team</h5>
+                                <p>See how you can join our team!</p>
                             </div>
                         </div>
                     </div>
@@ -341,7 +361,7 @@
                             </div>
                             <!-- Service Details Text Area -->
                             <div class="single_part_content">
-                                <h3>Bank Loan</h3>
+                                <h3>Details</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, illo esse nisi dignissimos laboriosam officiis. Aliquid corporis amet, possimus voluptatem ducimus iste accusantium iusto, eveniet voluptatibus necessitatibus numquam alias distinctio nemo natus accusamus aliquam ea facilis nulla hic cupiditate. In doloremque illo debitis alias iusto, harum quis ad culpa aut suscipit! Ratione labore perspiciatis consequuntur reprehenderit tenetur debitis porro minima.</p>
                             </div>
                             <!-- Service Details Text Area -->
@@ -356,7 +376,7 @@
                             </div>
                             <!-- Service Data Download Area -->
                             <div class="service_data_dl">
-                                <p>Can't Find your best answer. Download our full stories.</p>
+                                <p>Can't find an answer? Download our full catalog.</p>
                                 <a href="dummy-data/worksheet.pdf" class="btn default-button" download>Download PDF Document</a>
                             </div>
                         </div>
@@ -375,7 +395,7 @@
             <div class="col">
                 <!-- Section Heading Start -->
                 <div class="section_heading">
-                    <p>Our Best Service</p>
+                    <p>Our Services</p>
                     <h3>What we offer</h3>
                 </div>
             </div>
@@ -392,11 +412,11 @@
                     </div>
                     <!-- Single Service title -->
                     <div class="single_service_title">
-                        <h5>SME Planning</h5>
+                        <h5>Service</h5>
                     </div>
                     <!-- Single Service content -->
                     <div class="single_service_content">
-                        <p>Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with classy.</p>
+                        <p>Short description of the service</p>
                         <a data-target="#service_details" data-toggle="modal" href="#">Learn More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
@@ -411,11 +431,11 @@
                     </div>
                     <!-- Single Service title -->
                     <div class="single_service_title">
-                        <h5>Online Marketing</h5>
+                        <h5>Service</h5>
                     </div>
                     <!-- Single Service content -->
                     <div class="single_service_content">
-                        <p>Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with classy.</p>
+                        <p>Short description of the service.</p>
                         <a data-target="#service_details" data-toggle="modal" href="#">Learn More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
@@ -430,11 +450,11 @@
                     </div>
                     <!-- Single Service title -->
                     <div class="single_service_title">
-                        <h5>Bank Loan</h5>
+                        <h5>Service</h5>
                     </div>
                     <!-- Single Service content -->
                     <div class="single_service_content">
-                        <p>Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with classy.</p>
+                        <p>Short description of the service.</p>
                         <a data-target="#service_details" data-toggle="modal" href="#">Learn More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
@@ -498,209 +518,209 @@
 <!-- >>>>>>>>>>>>>>>> Works Details area end <<<<<<<<<<<<<<<< -->
 
 <!-- >>>>>>>>>>>>>>>> Project area start <<<<<<<<<<<<<<<< -->
-<section class="gallery_area section_padding_100_0 clearfix" id="work">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <!-- Section Heading Start -->
-                <div class="section_heading">
-                    <p>What We Create</p>
-                    <h3>Our latest works</h3>
-                </div>
-                <!-- Section Heading End -->
-            </div>
-        </div>
-    </div>
+{#<section class="gallery_area section_padding_100_0 clearfix" id="work">#}
+    {#<div class="container">#}
+        {#<div class="row">#}
+            {#<div class="col">#}
+                {#<!-- Section Heading Start -->#}
+                {#<div class="section_heading">#}
+                    {#<p>What We Create</p>#}
+                    {#<h3>Our latest works</h3>#}
+                {#</div>#}
+                {#<!-- Section Heading End -->#}
+            {#</div>#}
+        {#</div>#}
+    {#</div>#}
 
-    <div class="gallery_menu text-center">
-        <div class="portfolio-menu">
-            <button class="active btn" type="button" data-filter="*">All</button>
-            <button class="btn" type="button" data-filter=".web">Design</button>
-            <button class="btn" type="button" data-filter=".art">Art</button>
-            <button class="btn" type="button" data-filter=".bra">Branding</button>
-            <button class="btn" type="button" data-filter=".app">App</button>
-        </div>
-    </div>
+    {#<div class="gallery_menu text-center">#}
+        {#<div class="portfolio-menu">#}
+            {#<button class="active btn" type="button" data-filter="*">All</button>#}
+            {#<button class="btn" type="button" data-filter=".web">Design</button>#}
+            {#<button class="btn" type="button" data-filter=".art">Art</button>#}
+            {#<button class="btn" type="button" data-filter=".bra">Branding</button>#}
+            {#<button class="btn" type="button" data-filter=".app">App</button>#}
+        {#</div>#}
+    {#</div>#}
 
-    <div class="gallery_full_width_images_area clearfix">
-        <!-- Single gallery Item Start -->
-        <div class="single_gallery_item app wow fadeInUp">
-            <img src="img/gallery/1.jpg" alt="">
-            <!-- Single gallery Item hover caption -->
-            <div class="hover_overlay">
-                <div class="table">
-                    <div class="table_cell">
-                        <div class="gallery_info">
-                            <h5>Creative Work</h5>
-                            <p>Business</p>
-                            <div class="more_details">
-                                <a class="btn btn-sm" data-target="#works_details" data-toggle="modal" href="#">More Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="image_zoom_in">
-                    <a class="gallery_img" href="img/gallery/1.jpg"><i class="fa fa-camera" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
+    {#<div class="gallery_full_width_images_area clearfix">#}
+        {#<!-- Single gallery Item Start -->#}
+        {#<div class="single_gallery_item app wow fadeInUp">#}
+            {#<img src="img/gallery/1.jpg" alt="">#}
+            {#<!-- Single gallery Item hover caption -->#}
+            {#<div class="hover_overlay">#}
+                {#<div class="table">#}
+                    {#<div class="table_cell">#}
+                        {#<div class="gallery_info">#}
+                            {#<h5>Creative Work</h5>#}
+                            {#<p>Business</p>#}
+                            {#<div class="more_details">#}
+                                {#<a class="btn btn-sm" data-target="#works_details" data-toggle="modal" href="#">More Details</a>#}
+                            {#</div>#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+                {#<div class="image_zoom_in">#}
+                    {#<a class="gallery_img" href="img/gallery/1.jpg"><i class="fa fa-camera" aria-hidden="true"></i></a>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
 
-        <!-- Single gallery Item Start -->
-        <div class="single_gallery_item art wow fadeInUp">
-            <img src="img/gallery/2.jpg" alt="">
-            <!-- Single gallery Item hover caption -->
-            <div class="hover_overlay">
-                <div class="table">
-                    <div class="table_cell">
-                        <div class="gallery_info">
-                            <h5>Creative Work</h5>
-                            <p>Business</p>
-                            <div class="more_details">
-                                <a class="btn btn-sm" data-target="#works_details" data-toggle="modal" href="#">More Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="image_zoom_in">
-                    <a class="gallery_img" href="img/gallery/2.jpg"><i class="fa fa-camera" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
+        {#<!-- Single gallery Item Start -->#}
+        {#<div class="single_gallery_item art wow fadeInUp">#}
+            {#<img src="img/gallery/2.jpg" alt="">#}
+            {#<!-- Single gallery Item hover caption -->#}
+            {#<div class="hover_overlay">#}
+                {#<div class="table">#}
+                    {#<div class="table_cell">#}
+                        {#<div class="gallery_info">#}
+                            {#<h5>Creative Work</h5>#}
+                            {#<p>Business</p>#}
+                            {#<div class="more_details">#}
+                                {#<a class="btn btn-sm" data-target="#works_details" data-toggle="modal" href="#">More Details</a>#}
+                            {#</div>#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+                {#<div class="image_zoom_in">#}
+                    {#<a class="gallery_img" href="img/gallery/2.jpg"><i class="fa fa-camera" aria-hidden="true"></i></a>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
 
-        <!-- Single gallery Item Start -->
-        <div class="single_gallery_item wow bra fadeInUp">
-            <img src="img/gallery/3.jpg" alt="">
-            <!-- Single gallery Item hover caption -->
-            <div class="hover_overlay">
-                <div class="table">
-                    <div class="table_cell">
-                        <div class="gallery_info">
-                            <h5>Creative Work</h5>
-                            <p>Business</p>
-                            <div class="more_details">
-                                <a class="btn btn-sm" data-target="#works_details" data-toggle="modal" href="#">More Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="image_zoom_in">
-                    <a class="gallery_img" href="img/gallery/3.jpg"><i class="fa fa-camera" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
+        {#<!-- Single gallery Item Start -->#}
+        {#<div class="single_gallery_item wow bra fadeInUp">#}
+            {#<img src="img/gallery/3.jpg" alt="">#}
+            {#<!-- Single gallery Item hover caption -->#}
+            {#<div class="hover_overlay">#}
+                {#<div class="table">#}
+                    {#<div class="table_cell">#}
+                        {#<div class="gallery_info">#}
+                            {#<h5>Creative Work</h5>#}
+                            {#<p>Business</p>#}
+                            {#<div class="more_details">#}
+                                {#<a class="btn btn-sm" data-target="#works_details" data-toggle="modal" href="#">More Details</a>#}
+                            {#</div>#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+                {#<div class="image_zoom_in">#}
+                    {#<a class="gallery_img" href="img/gallery/3.jpg"><i class="fa fa-camera" aria-hidden="true"></i></a>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
 
-        <!-- Single gallery Item Start -->
-        <div class="single_gallery_item wow art fadeInUp">
-            <img src="img/gallery/4.jpg" alt="">
-            <!-- Single gallery Item hover caption -->
-            <div class="hover_overlay">
-                <div class="table">
-                    <div class="table_cell">
-                        <div class="gallery_info">
-                            <h5>Creative Work</h5>
-                            <p>Business</p>
-                            <div class="more_details">
-                                <a class="btn btn-sm" data-target="#works_details" data-toggle="modal" href="#">More Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="image_zoom_in">
-                    <a class="gallery_img" href="img/gallery/4.jpg"><i class="fa fa-camera" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
+        {#<!-- Single gallery Item Start -->#}
+        {#<div class="single_gallery_item wow art fadeInUp">#}
+            {#<img src="img/gallery/4.jpg" alt="">#}
+            {#<!-- Single gallery Item hover caption -->#}
+            {#<div class="hover_overlay">#}
+                {#<div class="table">#}
+                    {#<div class="table_cell">#}
+                        {#<div class="gallery_info">#}
+                            {#<h5>Creative Work</h5>#}
+                            {#<p>Business</p>#}
+                            {#<div class="more_details">#}
+                                {#<a class="btn btn-sm" data-target="#works_details" data-toggle="modal" href="#">More Details</a>#}
+                            {#</div>#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+                {#<div class="image_zoom_in">#}
+                    {#<a class="gallery_img" href="img/gallery/4.jpg"><i class="fa fa-camera" aria-hidden="true"></i></a>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
 
-        <!-- Single gallery Item Start -->
-        <div class="single_gallery_item bra wow fadeInUp">
-            <img src="img/gallery/5.jpg" alt="">
-            <!-- Single gallery Item hover caption -->
-            <div class="hover_overlay">
-                <div class="table">
-                    <div class="table_cell">
-                        <div class="gallery_info">
-                            <h5>Creative Work</h5>
-                            <p>Business</p>
-                            <div class="more_details">
-                                <a class="btn btn-sm" data-target="#works_details" data-toggle="modal" href="#">More Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="image_zoom_in">
-                    <a class="gallery_img" href="img/gallery/5.jpg"><i class="fa fa-camera" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
+        {#<!-- Single gallery Item Start -->#}
+        {#<div class="single_gallery_item bra wow fadeInUp">#}
+            {#<img src="img/gallery/5.jpg" alt="">#}
+            {#<!-- Single gallery Item hover caption -->#}
+            {#<div class="hover_overlay">#}
+                {#<div class="table">#}
+                    {#<div class="table_cell">#}
+                        {#<div class="gallery_info">#}
+                            {#<h5>Creative Work</h5>#}
+                            {#<p>Business</p>#}
+                            {#<div class="more_details">#}
+                                {#<a class="btn btn-sm" data-target="#works_details" data-toggle="modal" href="#">More Details</a>#}
+                            {#</div>#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+                {#<div class="image_zoom_in">#}
+                    {#<a class="gallery_img" href="img/gallery/5.jpg"><i class="fa fa-camera" aria-hidden="true"></i></a>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
 
-        <!-- Single gallery Item Start -->
-        <div class="single_gallery_item art wow fadeInUp">
-            <img src="img/gallery/6.jpg" alt="">
-            <!-- Single gallery Item hover caption -->
-            <div class="hover_overlay">
-                <div class="table">
-                    <div class="table_cell">
-                        <div class="gallery_info">
-                            <h5>Creative Work</h5>
-                            <p>Business</p>
-                            <div class="more_details">
-                                <a class="btn btn-sm" data-target="#works_details" data-toggle="modal" href="#">More Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="image_zoom_in">
-                    <a class="gallery_img" href="img/gallery/6.jpg"><i class="fa fa-camera" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
+        {#<!-- Single gallery Item Start -->#}
+        {#<div class="single_gallery_item art wow fadeInUp">#}
+            {#<img src="img/gallery/6.jpg" alt="">#}
+            {#<!-- Single gallery Item hover caption -->#}
+            {#<div class="hover_overlay">#}
+                {#<div class="table">#}
+                    {#<div class="table_cell">#}
+                        {#<div class="gallery_info">#}
+                            {#<h5>Creative Work</h5>#}
+                            {#<p>Business</p>#}
+                            {#<div class="more_details">#}
+                                {#<a class="btn btn-sm" data-target="#works_details" data-toggle="modal" href="#">More Details</a>#}
+                            {#</div>#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+                {#<div class="image_zoom_in">#}
+                    {#<a class="gallery_img" href="img/gallery/6.jpg"><i class="fa fa-camera" aria-hidden="true"></i></a>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
 
-        <!-- Single gallery Item Start -->
-        <div class="single_gallery_item web wow fadeInUp">
-            <img src="img/gallery/7.jpg" alt="">
-            <!-- Single gallery Item hover caption -->
-            <div class="hover_overlay">
-                <div class="table">
-                    <div class="table_cell">
-                        <div class="gallery_info">
-                            <h5>Creative Work</h5>
-                            <p>Business</p>
-                            <div class="more_details">
-                                <a class="btn btn-sm" data-target="#works_details" data-toggle="modal" href="#">More Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="image_zoom_in">
-                    <a class="gallery_img" href="img/gallery/7.jpg"><i class="fa fa-camera" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
+        {#<!-- Single gallery Item Start -->#}
+        {#<div class="single_gallery_item web wow fadeInUp">#}
+            {#<img src="img/gallery/7.jpg" alt="">#}
+            {#<!-- Single gallery Item hover caption -->#}
+            {#<div class="hover_overlay">#}
+                {#<div class="table">#}
+                    {#<div class="table_cell">#}
+                        {#<div class="gallery_info">#}
+                            {#<h5>Creative Work</h5>#}
+                            {#<p>Business</p>#}
+                            {#<div class="more_details">#}
+                                {#<a class="btn btn-sm" data-target="#works_details" data-toggle="modal" href="#">More Details</a>#}
+                            {#</div>#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+                {#<div class="image_zoom_in">#}
+                    {#<a class="gallery_img" href="img/gallery/7.jpg"><i class="fa fa-camera" aria-hidden="true"></i></a>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
 
-        <!-- Single gallery Item Start -->
-        <div class="single_gallery_item bra wow fadeInUp">
-            <img src="img/gallery/8.jpg" alt="">
-            <!-- Single gallery Item hover caption -->
-            <div class="hover_overlay">
-                <div class="table">
-                    <div class="table_cell">
-                        <div class="gallery_info">
-                            <h5>Creative Work</h5>
-                            <p>Business</p>
-                            <div class="more_details">
-                                <a class="btn btn-sm" data-target="#works_details" data-toggle="modal" href="#">More Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="image_zoom_in">
-                    <a class="gallery_img" href="img/gallery/8.jpg"><i class="fa fa-camera" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
+        {#<!-- Single gallery Item Start -->#}
+        {#<div class="single_gallery_item bra wow fadeInUp">#}
+            {#<img src="img/gallery/8.jpg" alt="">#}
+            {#<!-- Single gallery Item hover caption -->#}
+            {#<div class="hover_overlay">#}
+                {#<div class="table">#}
+                    {#<div class="table_cell">#}
+                        {#<div class="gallery_info">#}
+                            {#<h5>Creative Work</h5>#}
+                            {#<p>Business</p>#}
+                            {#<div class="more_details">#}
+                                {#<a class="btn btn-sm" data-target="#works_details" data-toggle="modal" href="#">More Details</a>#}
+                            {#</div>#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+                {#<div class="image_zoom_in">#}
+                    {#<a class="gallery_img" href="img/gallery/8.jpg"><i class="fa fa-camera" aria-hidden="true"></i></a>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
 
-    </div>
-</section>
+    {#</div>#}
+{#</section>#}
 <!-- >>>>>>>>>>>>>>>> Project area end <<<<<<<<<<<<<<<< -->
 
 <!-- >>>>>>>>>>>>>>>> Team Advisor Details Area Start <<<<<<<<<<<<<<<< -->
@@ -754,312 +774,312 @@
 <!-- >>>>>>>>>>>>>>>> Team Advisor Details Area End <<<<<<<<<<<<<<<< -->
 
 <!-- >>>>>>>>>>>>>>>> Our Advisor Area Start <<<<<<<<<<<<<<<< -->
-<section class="our_advisor_area clearfix section_padding_100_70" id="advisor">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <!-- Section Heading Start -->
-                <div class="section_heading">
-                    <p>our quality members</p>
-                    <h3>Creative Team</h3>
-                </div>
-            </div>
-        </div>
+{#<section class="our_advisor_area clearfix section_padding_100_70" id="advisor">#}
+    {#<div class="container">#}
+        {#<div class="row">#}
+            {#<div class="col-12">#}
+                {#<!-- Section Heading Start -->#}
+                {#<div class="section_heading">#}
+                    {#<p>our quality members</p>#}
+                    {#<h3>Creative Team</h3>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
 
-        <div class="row">
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="single_advisor wow fadeInUp" data-wow-delay="0.2s">
-                    <!-- Single advisor profile thumb -->
-                    <div class="advisor_thumb">
-                        <img src="img/advisor-img/advisor-1.png" alt="">
-                        <!-- Single advisor social link -->
-                        <div class="advisor_social_info">
-                            <div class="social_icon">
-                                <a href="#"><i class="ion-social-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="ion-social-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="ion-social-googleplus" aria-hidden="true"></i></a>
-                                <a href="#"><i class="ion-social-dribbble" aria-hidden="true"></i></a>
-                                <a href="#"><i class="ion-social-pinterest" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single advisor profile details -->
-                    <div class="single_advisor_details_info">
-                        <h5>Riyadh Khan</h5>
-                        <p>Financial Advisor</p>
-                        <!-- View More -->
-                        <div class="view_more">
-                            <a data-target="#advisor_details" data-toggle="modal" href="#"><i class="ion-android-add" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        {#<div class="row">#}
+            {#<div class="col-12 col-sm-6 col-lg-4">#}
+                {#<div class="single_advisor wow fadeInUp" data-wow-delay="0.2s">#}
+                    {#<!-- Single advisor profile thumb -->#}
+                    {#<div class="advisor_thumb">#}
+                        {#<img src="img/advisor-img/advisor-1.png" alt="">#}
+                        {#<!-- Single advisor social link -->#}
+                        {#<div class="advisor_social_info">#}
+                            {#<div class="social_icon">#}
+                                {#<a href="#"><i class="ion-social-facebook" aria-hidden="true"></i></a>#}
+                                {#<a href="#"><i class="ion-social-twitter" aria-hidden="true"></i></a>#}
+                                {#<a href="#"><i class="ion-social-googleplus" aria-hidden="true"></i></a>#}
+                                {#<a href="#"><i class="ion-social-dribbble" aria-hidden="true"></i></a>#}
+                                {#<a href="#"><i class="ion-social-pinterest" aria-hidden="true"></i></a>#}
+                            {#</div>#}
+                        {#</div>#}
+                    {#</div>#}
+                    {#<!-- Single advisor profile details -->#}
+                    {#<div class="single_advisor_details_info">#}
+                        {#<h5>Riyadh Khan</h5>#}
+                        {#<p>Financial Advisor</p>#}
+                        {#<!-- View More -->#}
+                        {#<div class="view_more">#}
+                            {#<a data-target="#advisor_details" data-toggle="modal" href="#"><i class="ion-android-add" aria-hidden="true"></i></a>#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
 
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="single_advisor wow fadeInUp" data-wow-delay="0.4s">
-                    <!-- Single advisor profile thumb -->
-                    <div class="advisor_thumb">
-                        <img src="img/advisor-img/advisor-2.png" alt="">
-                        <!-- Single advisor social link -->
-                        <div class="advisor_social_info">
-                            <div class="social_icon">
-                                <a href="#"><i class="ion-social-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="ion-social-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="ion-social-googleplus" aria-hidden="true"></i></a>
-                                <a href="#"><i class="ion-social-dribbble" aria-hidden="true"></i></a>
-                                <a href="#"><i class="ion-social-pinterest" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single advisor profile details -->
-                    <div class="single_advisor_details_info">
-                        <h5>Lim Sarah</h5>
-                        <p>Financial Advisor</p>
-                        <!-- View More -->
-                        <div class="view_more">
-                            <a data-target="#advisor_details" data-toggle="modal" href="#"><i class="ion-android-add" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {#<div class="col-12 col-sm-6 col-lg-4">#}
+                {#<div class="single_advisor wow fadeInUp" data-wow-delay="0.4s">#}
+                    {#<!-- Single advisor profile thumb -->#}
+                    {#<div class="advisor_thumb">#}
+                        {#<img src="img/advisor-img/advisor-2.png" alt="">#}
+                        {#<!-- Single advisor social link -->#}
+                        {#<div class="advisor_social_info">#}
+                            {#<div class="social_icon">#}
+                                {#<a href="#"><i class="ion-social-facebook" aria-hidden="true"></i></a>#}
+                                {#<a href="#"><i class="ion-social-twitter" aria-hidden="true"></i></a>#}
+                                {#<a href="#"><i class="ion-social-googleplus" aria-hidden="true"></i></a>#}
+                                {#<a href="#"><i class="ion-social-dribbble" aria-hidden="true"></i></a>#}
+                                {#<a href="#"><i class="ion-social-pinterest" aria-hidden="true"></i></a>#}
+                            {#</div>#}
+                        {#</div>#}
+                    {#</div>#}
+                    {#<!-- Single advisor profile details -->#}
+                    {#<div class="single_advisor_details_info">#}
+                        {#<h5>Lim Sarah</h5>#}
+                        {#<p>Financial Advisor</p>#}
+                        {#<!-- View More -->#}
+                        {#<div class="view_more">#}
+                            {#<a data-target="#advisor_details" data-toggle="modal" href="#"><i class="ion-android-add" aria-hidden="true"></i></a>#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
 
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="single_advisor wow fadeInUp" data-wow-delay="0.6s">
-                    <!-- Single advisor profile thumb -->
-                    <div class="advisor_thumb">
-                        <img src="img/advisor-img/advisor-3.png" alt="">
-                        <!-- Single advisor social link -->
-                        <div class="advisor_social_info">
-                            <div class="social_icon">
-                                <a href="#"><i class="ion-social-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="ion-social-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="ion-social-googleplus" aria-hidden="true"></i></a>
-                                <a href="#"><i class="ion-social-dribbble" aria-hidden="true"></i></a>
-                                <a href="#"><i class="ion-social-pinterest" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single advisor profile details -->
-                    <div class="single_advisor_details_info">
-                        <h5>Samantha Islam</h5>
-                        <p>Financial Advisor</p>
-                        <!-- View More -->
-                        <div class="view_more">
-                            <a data-target="#advisor_details" data-toggle="modal" href="#"><i class="ion-android-add" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+            {#<div class="col-12 col-sm-6 col-lg-4">#}
+                {#<div class="single_advisor wow fadeInUp" data-wow-delay="0.6s">#}
+                    {#<!-- Single advisor profile thumb -->#}
+                    {#<div class="advisor_thumb">#}
+                        {#<img src="img/advisor-img/advisor-3.png" alt="">#}
+                        {#<!-- Single advisor social link -->#}
+                        {#<div class="advisor_social_info">#}
+                            {#<div class="social_icon">#}
+                                {#<a href="#"><i class="ion-social-facebook" aria-hidden="true"></i></a>#}
+                                {#<a href="#"><i class="ion-social-twitter" aria-hidden="true"></i></a>#}
+                                {#<a href="#"><i class="ion-social-googleplus" aria-hidden="true"></i></a>#}
+                                {#<a href="#"><i class="ion-social-dribbble" aria-hidden="true"></i></a>#}
+                                {#<a href="#"><i class="ion-social-pinterest" aria-hidden="true"></i></a>#}
+                            {#</div>#}
+                        {#</div>#}
+                    {#</div>#}
+                    {#<!-- Single advisor profile details -->#}
+                    {#<div class="single_advisor_details_info">#}
+                        {#<h5>Samantha Islam</h5>#}
+                        {#<p>Financial Advisor</p>#}
+                        {#<!-- View More -->#}
+                        {#<div class="view_more">#}
+                            {#<a data-target="#advisor_details" data-toggle="modal" href="#"><i class="ion-android-add" aria-hidden="true"></i></a>#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+    {#</div>#}
+{#</section>#}
 <!-- >>>>>>>>>>>>>>>> Our advisor Area End <<<<<<<<<<<<<<<< -->
 
 <!-- >>>>>>>>>>>>>>>> FAQ Area Start <<<<<<<<<<<<<<<< -->
-<section class="faq_question_area section_padding_100">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
+{#<section class="faq_question_area section_padding_100">#}
+    {#<div class="container">#}
+        {#<div class="row">#}
+            {#<div class="col-12 col-md-12">#}
 
-                <!-- Section Heading Start -->
-                <div class="section_heading text-left">
-                    <h3>Frequently asked questions</h3>
-                </div>
+                {#<!-- Section Heading Start -->#}
+                {#<div class="section_heading text-left">#}
+                    {#<h3>Frequently asked questions</h3>#}
+                {#</div>#}
 
-                <!-- FAQ Area Start -->
-                <div class="faq_area">
-                    <div class="accordions" id="accordion" role="tablist" aria-multiselectable="true">
+                {#<!-- FAQ Area Start -->#}
+                {#<div class="faq_area">#}
+                    {#<div class="accordions" id="accordion" role="tablist" aria-multiselectable="true">#}
 
-                        <!-- single accordian area start -->
-                        <div class="panel single-accordion">
-                            <h6>
-                                <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">How can I apply for a job?
-                                    <span class="accor-open"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
-                                    <span class="accor-close"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
-                                </a>
-                            </h6>
-                            <div id="collapseOne" class="accordion-content collapse">
-                                <p>Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with classy.</p>
-                            </div>
-                        </div>
+                        {#<!-- single accordian area start -->#}
+                        {#<div class="panel single-accordion">#}
+                            {#<h6>#}
+                                {#<a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">How can I submit an RFP?#}
+                                    {#<span class="accor-open"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>#}
+                                    {#<span class="accor-close"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>#}
+                                {#</a>#}
+                            {#</h6>#}
+                            {#<div id="collapseOne" class="accordion-content collapse">#}
+                                {#<p>Answer to question</p>#}
+                            {#</div>#}
+                        {#</div>#}
 
-                        <!-- single accordian area start -->
-                        <div class="panel single-accordion">
-                            <h6>
-                                <a role="button" class="collapsed" aria-expanded="true" aria-controls="two" data-parent="#accordion" data-toggle="collapse" href="#two">Where can I find out about solution?
-                                    <span class="accor-open"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
-                                    <span class="accor-close"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
-                                </a>
-                            </h6>
-                            <div id="two" class="accordion-content collapse">
-                                <p>Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with classy.</p>
-                            </div>
-                        </div>
+                        {#<!-- single accordian area start -->#}
+                        {#<div class="panel single-accordion">#}
+                            {#<h6>#}
+                                {#<a role="button" class="collapsed" aria-expanded="true" aria-controls="two" data-parent="#accordion" data-toggle="collapse" href="#two">Where can I find out about solutions?#}
+                                    {#<span class="accor-open"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>#}
+                                    {#<span class="accor-close"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>#}
+                                {#</a>#}
+                            {#</h6>#}
+                            {#<div id="two" class="accordion-content collapse">#}
+                                {#<p>Answer to question</p>#}
+                            {#</div>#}
+                        {#</div>#}
 
-                        <!-- single accordian area start -->
-                        <div class="panel single-accordion">
-                            <h6>
-                                <a role="button" aria-expanded="true" aria-controls="three" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#three">Who can use the apps?
-                                    <span class="accor-open"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
-                                    <span class="accor-close"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
-                                </a>
-                            </h6>
-                            <div id="three" class="accordion-content collapse">
-                                <p>Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with classy.</p>
-                            </div>
-                        </div>
+                        {#<!-- single accordian area start -->#}
+                        {#<div class="panel single-accordion">#}
+                            {#<h6>#}
+                                {#<a role="button" aria-expanded="true" aria-controls="three" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#three">Who can help me with ...?#}
+                                    {#<span class="accor-open"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>#}
+                                    {#<span class="accor-close"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>#}
+                                {#</a>#}
+                            {#</h6>#}
+                            {#<div id="three" class="accordion-content collapse">#}
+                                {#<p>Answer to question</p>#}
+                            {#</div>#}
+                        {#</div>#}
 
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="testimonials_area xs-mt-30">
-                    <div class="testimonials">
-                        <!-- Single testimonial area start  -->
-                        <div class="single_testimonial_area">
-                            <!-- Single testimonial thumb  -->
-                            <div class="testimonial_author_thumb">
-                                <img src="img/advisor-img/tes-1.jpg" alt="">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                            </div>
-                            <!-- Single testimonial text  -->
-                            <div class="testimonial_text">
-                                <p>Classy - is an awesome template. It's design looks pretty good. Code is really clean. Explained Documentation, Fast &amp; beautiful.</p>
-                            </div>
-                            <div class="testimonial_author_name">
-                                <h5>Yasin Rahman</h5>
-                                <h6>WrapBootstrap User</h6>
-                            </div>
-                        </div>
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+            {#<div class="col-12 col-md-6">#}
+                {#<div class="testimonials_area xs-mt-30">#}
+                    {#<div class="testimonials">#}
+                        {#<!-- Single testimonial area start  -->#}
+                        {#<div class="single_testimonial_area">#}
+                            {#<!-- Single testimonial thumb  -->#}
+                            {#<div class="testimonial_author_thumb">#}
+                                {#<img src="img/advisor-img/tes-1.jpg" alt="">#}
+                                {#<i class="fa fa-quote-right" aria-hidden="true"></i>#}
+                            {#</div>#}
+                            {#<!-- Single testimonial text  -->#}
+                            {#<div class="testimonial_text">#}
+                                {#<p>Classy - is an awesome template. It's design looks pretty good. Code is really clean. Explained Documentation, Fast &amp; beautiful.</p>#}
+                            {#</div>#}
+                            {#<div class="testimonial_author_name">#}
+                                {#<h5>Yasin Rahman</h5>#}
+                                {#<h6>WrapBootstrap User</h6>#}
+                            {#</div>#}
+                        {#</div>#}
 
-                        <!-- Single testimonial area start  -->
-                        <div class="single_testimonial_area">
-                            <!-- Single testimonial thumb  -->
-                            <div class="testimonial_author_thumb">
-                                <img src="img/advisor-img/tes-2.jpg" alt="">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                            </div>
-                            <!-- Single testimonial text  -->
-                            <div class="testimonial_text">
-                                <p>Theme is very good. Support is fast &amp; helpful. Thank you.</p>
-                            </div>
-                            <div class="testimonial_author_name">
-                                <h5>Rafiqul Islam</h5>
-                                <h6>WrapBootstrap User</h6>
-                            </div>
-                        </div>
+                        {#<!-- Single testimonial area start  -->#}
+                        {#<div class="single_testimonial_area">#}
+                            {#<!-- Single testimonial thumb  -->#}
+                            {#<div class="testimonial_author_thumb">#}
+                                {#<img src="img/advisor-img/tes-2.jpg" alt="">#}
+                                {#<i class="fa fa-quote-right" aria-hidden="true"></i>#}
+                            {#</div>#}
+                            {#<!-- Single testimonial text  -->#}
+                            {#<div class="testimonial_text">#}
+                                {#<p>Theme is very good. Support is fast &amp; helpful. Thank you.</p>#}
+                            {#</div>#}
+                            {#<div class="testimonial_author_name">#}
+                                {#<h5>Rafiqul Islam</h5>#}
+                                {#<h6>WrapBootstrap User</h6>#}
+                            {#</div>#}
+                        {#</div>#}
 
-                        <!-- Single testimonial area start  -->
-                        <div class="single_testimonial_area">
-                            <!-- Single testimonial thumb  -->
-                            <div class="testimonial_author_thumb">
-                                <img src="img/advisor-img/tes-3.jpg" alt="">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                            </div>
-                            <!-- Single testimonial text  -->
-                            <div class="testimonial_text">
-                                <p>Fast, neat and beautiful. Nailed it!</p>
-                            </div>
-                            <div class="testimonial_author_name">
-                                <h5>Lim Sarah</h5>
-                                <h6>WrapBootstrap User</h6>
-                            </div>
-                        </div>
+                        {#<!-- Single testimonial area start  -->#}
+                        {#<div class="single_testimonial_area">#}
+                            {#<!-- Single testimonial thumb  -->#}
+                            {#<div class="testimonial_author_thumb">#}
+                                {#<img src="img/advisor-img/tes-3.jpg" alt="">#}
+                                {#<i class="fa fa-quote-right" aria-hidden="true"></i>#}
+                            {#</div>#}
+                            {#<!-- Single testimonial text  -->#}
+                            {#<div class="testimonial_text">#}
+                                {#<p>Fast, neat and beautiful. Nailed it!</p>#}
+                            {#</div>#}
+                            {#<div class="testimonial_author_name">#}
+                                {#<h5>Lim Sarah</h5>#}
+                                {#<h6>WrapBootstrap User</h6>#}
+                            {#</div>#}
+                        {#</div>#}
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+    {#</div>#}
+{#</section>#}
 <!-- >>>>>>>>>>>>>>>> FAQ Area End <<<<<<<<<<<<<<<< -->
 
 <!-- >>>>>>>>>>>>>>>> Price and Plans Area Start <<<<<<<<<<<<<<<< -->
-<div class="price_plan_area section_padding_100_70" id="price">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <!-- Section Heading Start -->
-                <div class="section_heading">
-                    <p>Pick your best plan</p>
-                    <h3>Price Plan</h3>
-                </div>
-            </div>
-        </div>
+{#<div class="price_plan_area section_padding_100_70" id="price">#}
+    {#<div class="container">#}
+        {#<div class="row">#}
+            {#<div class="col-12">#}
+                {#<!-- Section Heading Start -->#}
+                {#<div class="section_heading">#}
+                    {#<p>Pick your best plan</p>#}
+                    {#<h3>Price Plan</h3>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
 
-        <div class="row">
-            <!-- Single Price Plan Area Start -->
-            <div class="col-12 col-md-4">
-                <div class="single_price_plan wow fadeInUp" data-wow-delay=".2s">
-                    <div class="title">
-                        <h4>Startup</h4>
-                    </div>
-                    <div class="price">
-                        <h4>$19</h4>
-                    </div>
-                    <div class="description">
-                        <p>Bandwidth: 100GB</p>
-                        <p>Online Space: 5GB</p>
-                        <p>Full Support: No</p>
-                        <p>No Hidden Fees</p>
-                        <p>Duration: 120 Days</p>
-                    </div>
-                    <div class="buy_now">
-                        <a href="#" role="button">Pick this Plan</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Price Plan Area End -->
+        {#<div class="row">#}
+            {#<!-- Single Price Plan Area Start -->#}
+            {#<div class="col-12 col-md-4">#}
+                {#<div class="single_price_plan wow fadeInUp" data-wow-delay=".2s">#}
+                    {#<div class="title">#}
+                        {#<h4>Startup</h4>#}
+                    {#</div>#}
+                    {#<div class="price">#}
+                        {#<h4>$19</h4>#}
+                    {#</div>#}
+                    {#<div class="description">#}
+                        {#<p>Bandwidth: 100GB</p>#}
+                        {#<p>Online Space: 5GB</p>#}
+                        {#<p>Full Support: No</p>#}
+                        {#<p>No Hidden Fees</p>#}
+                        {#<p>Duration: 120 Days</p>#}
+                    {#</div>#}
+                    {#<div class="buy_now">#}
+                        {#<a href="#" role="button">Pick this Plan</a>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+            {#<!-- Single Price Plan Area End -->#}
 
-            <!-- Single Price Plan Area Start -->
-            <div class="col-12 col-md-4">
-                <div class="single_price_plan wow fadeInUp" data-wow-delay=".4s">
-                    <div class="title">
-                        <h4>Standard</h4>
-                    </div>
-                    <div class="price">
-                        <h4>$39</h4>
-                    </div>
-                    <div class="description">
-                        <p>Bandwidth: 250GB</p>
-                        <p>Online Space: 5GB</p>
-                        <p>Full Support: No</p>
-                        <p>No Hidden Fees</p>
-                        <p>Duration: 120 Days</p>
-                    </div>
-                    <div class="buy_now">
-                        <a href="#" role="button">Pick this Plan</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Price Plan Area End -->
+            {#<!-- Single Price Plan Area Start -->#}
+            {#<div class="col-12 col-md-4">#}
+                {#<div class="single_price_plan wow fadeInUp" data-wow-delay=".4s">#}
+                    {#<div class="title">#}
+                        {#<h4>Standard</h4>#}
+                    {#</div>#}
+                    {#<div class="price">#}
+                        {#<h4>$39</h4>#}
+                    {#</div>#}
+                    {#<div class="description">#}
+                        {#<p>Bandwidth: 250GB</p>#}
+                        {#<p>Online Space: 5GB</p>#}
+                        {#<p>Full Support: No</p>#}
+                        {#<p>No Hidden Fees</p>#}
+                        {#<p>Duration: 120 Days</p>#}
+                    {#</div>#}
+                    {#<div class="buy_now">#}
+                        {#<a href="#" role="button">Pick this Plan</a>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+            {#<!-- Single Price Plan Area End -->#}
 
-            <!-- Single Price Plan Area Start -->
-            <div class="col-12 col-md-4">
-                <div class="single_price_plan wow fadeInUp" data-wow-delay=".6s">
-                    <div class="title">
-                        <h4>Premium</h4>
-                    </div>
-                    <div class="price">
-                        <h4>$99</h4>
-                    </div>
-                    <div class="description">
-                        <p>Bandwidth: 500GB</p>
-                        <p>Online Space: 5GB</p>
-                        <p>Full Support: No</p>
-                        <p>No Hidden Fees</p>
-                        <p>Duration: 120 Days</p>
-                    </div>
-                    <div class="buy_now">
-                        <a href="#" role="button">Pick this Plan</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Price Plan Area End -->
+            {#<!-- Single Price Plan Area Start -->#}
+            {#<div class="col-12 col-md-4">#}
+                {#<div class="single_price_plan wow fadeInUp" data-wow-delay=".6s">#}
+                    {#<div class="title">#}
+                        {#<h4>Premium</h4>#}
+                    {#</div>#}
+                    {#<div class="price">#}
+                        {#<h4>$99</h4>#}
+                    {#</div>#}
+                    {#<div class="description">#}
+                        {#<p>Bandwidth: 500GB</p>#}
+                        {#<p>Online Space: 5GB</p>#}
+                        {#<p>Full Support: No</p>#}
+                        {#<p>No Hidden Fees</p>#}
+                        {#<p>Duration: 120 Days</p>#}
+                    {#</div>#}
+                    {#<div class="buy_now">#}
+                        {#<a href="#" role="button">Pick this Plan</a>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+            {#<!-- Single Price Plan Area End -->#}
 
-        </div>
-    </div>
-</div>
+        {#</div>#}
+    {#</div>#}
+{#</div>#}
 <!-- >>>>>>>>>>>>>>>> Price and Plans Area End <<<<<<<<<<<<<<<< -->
 
 <!-- >>>>>>>>>>>>>>>> Blog Area Start <<<<<<<<<<<<<<<< -->
@@ -1069,8 +1089,8 @@
             <div class="col-12">
                 <!-- Section Heading Start -->
                 <div class="section_heading">
-                    <p>our creative info</p>
-                    <h3>latest news</h3>
+                    <p>See whats going on in the community</p>
+                    <h3>our blog</h3>
                 </div>
             </div>
         </div>
@@ -1091,18 +1111,18 @@
                                 <p>03 Feb 2017</p>
                             </div>
                             <div class="tag">
-                                <a href="#">Blog</a>
+                                <a href="#">Post</a>
                             </div>
                         </div>
                         <!-- single latest news title -->
                         <div class="news_title">
                             <a href="single-blog-with-right-sb.html">
-                                <h4>Headline indicating nature of articles.</h4>
+                                <h4>Title</h4>
                             </a>
                         </div>
                         <!-- single latest news excerp -->
                         <div class="news_content">
-                            <p>Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with classy.</p>
+                            <p>Content Content Content</p>
                             <a href="single-blog-with-left-sb.html">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
@@ -1124,18 +1144,18 @@
                                 <p>01 Feb 2017</p>
                             </div>
                             <div class="tag">
-                                <a href="#">Trending</a>
+                                <a href="#">Post</a>
                             </div>
                         </div>
                         <!-- single latest news title -->
                         <div class="news_title">
                             <a href="single-blog-with-right-sb.html">
-                                <h4>Headline indicating nature of articles.</h4>
+                                <h4>Title.</h4>
                             </a>
                         </div>
                         <!-- single latest news excerp -->
                         <div class="news_content">
-                            <p>Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with classy.</p>
+                            <p>Content content content</p>
                             <a href="single-blog-with-right-sb.html">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
@@ -1157,18 +1177,18 @@
                                 <p>27 Jan 2017</p>
                             </div>
                             <div class="tag">
-                                <a href="#">Notice</a>
+                                <a href="#">Post</a>
                             </div>
                         </div>
                         <!-- single latest news title -->
                         <div class="news_title">
                             <a href="single-blog-with-right-sb.html">
-                                <h4>Headline indicating nature of articles.</h4>
+                                <h4>Title</h4>
                             </a>
                         </div>
                         <!-- single latest news excerp -->
                         <div class="news_content">
-                            <p>Classy is completely creative, clean &amp; 100% responsive website. Put your business into next level with classy.</p>
+                            <p>content content content.</p>
                             <a href="single-blog-with-right-sb.html">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
@@ -1181,72 +1201,72 @@
 <!-- >>>>>>>>>>>>>>>> Blog Area End <<<<<<<<<<<<<<<< -->
 
 <!-- >>>>>>>>>>>>>>>> Message Now Area Start <<<<<<<<<<<<<<<< -->
-<section class="message_now_area bg-gray section_padding_100_70" id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <!-- Message Title -->
-                <div class="message_title">
-                    <!-- Section Heading Start -->
-                    <div class="section_heading">
-                        <p>Drop a line</p>
-                        <h3>Message Now</h3>
-                    </div>
-                </div>
+{#<section class="message_now_area bg-gray section_padding_100_70" id="contact">#}
+    {#<div class="container">#}
+        {#<div class="row">#}
+            {#<div class="col-12">#}
+                {#<!-- Message Title -->#}
+                {#<div class="message_title">#}
+                    {#<!-- Section Heading Start -->#}
+                    {#<div class="section_heading">#}
+                        {#<p>Drop a line</p>#}
+                        {#<h3>Message Now</h3>#}
+                    {#</div>#}
+                {#</div>#}
 
-                <div class="contact_from">
-                    <form action="mail.php" method="post" id="main_contact_form">
-                        <!-- Message Input Area Start -->
-                        <div class="contact_input_area">
-                            <div id="success_fail_info"></div>
-                            <div class="row">
-                                <!-- Single Input Area Start -->
-                                <div class="col-12 col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
-                                    </div>
-                                </div>
-                                <!-- Single Input Area Start -->
-                                <div class="col-12 col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your E-mail" required>
-                                    </div>
-                                </div>
-                                <!-- Single Input Area Start -->
-                                <div class="col-12 col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Your Subject" required>
-                                    </div>
-                                </div>
-                                <!-- Single Input Area Start -->
-                                <div class="col-12 col-md-6">
-                                    <div class="form-group">
-                                        <input type="number" class="form-control" name="number" id="number" placeholder="Your Number *" required>
-                                    </div>
-                                </div>
-                                <!-- Single Input Area Start -->
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Your Message *" required></textarea>
-                                    </div>
-                                </div>
-                                <!-- Single Input Area Start -->
-                                <div class="col-12">
-                                    <button type="submit" class="btn default-button-green">Send Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                {#<div class="contact_from">#}
+                    {#<form action="mail.php" method="post" id="main_contact_form">#}
+                        {#<!-- Message Input Area Start -->#}
+                        {#<div class="contact_input_area">#}
+                            {#<div id="success_fail_info"></div>#}
+                            {#<div class="row">#}
+                                {#<!-- Single Input Area Start -->#}
+                                {#<div class="col-12 col-md-6">#}
+                                    {#<div class="form-group">#}
+                                        {#<input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>#}
+                                    {#</div>#}
+                                {#</div>#}
+                                {#<!-- Single Input Area Start -->#}
+                                {#<div class="col-12 col-md-6">#}
+                                    {#<div class="form-group">#}
+                                        {#<input type="email" class="form-control" name="email" id="email" placeholder="Your E-mail" required>#}
+                                    {#</div>#}
+                                {#</div>#}
+                                {#<!-- Single Input Area Start -->#}
+                                {#<div class="col-12 col-md-6">#}
+                                    {#<div class="form-group">#}
+                                        {#<input type="text" class="form-control" name="subject" id="subject" placeholder="Your Subject" required>#}
+                                    {#</div>#}
+                                {#</div>#}
+                                {#<!-- Single Input Area Start -->#}
+                                {#<div class="col-12 col-md-6">#}
+                                    {#<div class="form-group">#}
+                                        {#<input type="number" class="form-control" name="number" id="number" placeholder="Your Number *" required>#}
+                                    {#</div>#}
+                                {#</div>#}
+                                {#<!-- Single Input Area Start -->#}
+                                {#<div class="col-12">#}
+                                    {#<div class="form-group">#}
+                                        {#<textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Your Message *" required></textarea>#}
+                                    {#</div>#}
+                                {#</div>#}
+                                {#<!-- Single Input Area Start -->#}
+                                {#<div class="col-12">#}
+                                    {#<button type="submit" class="btn default-button-green">Send Now</button>#}
+                                {#</div>#}
+                            {#</div>#}
+                        {#</div>#}
+                    {#</form>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+    {#</div>#}
+{#</section>#}
 
-<div class="map_contact_address_area">
-    <!-- Map Area Start -->
-    <div class="map_area" id="googleMap"></div>
-</div>
+{#<div class="map_contact_address_area">#}
+    {#<!-- Map Area Start -->#}
+    {#<div class="map_area" id="googleMap"></div>#}
+{#</div>#}
 <!-- >>>>>>>>>>>>>>>> Message Now Area Start <<<<<<<<<<<<<<<< -->
 
 <!-- >>>>>>>>>>>>>>>> Footer Area Start <<<<<<<<<<<<<<<< -->
@@ -1265,17 +1285,14 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer_bottom">
-                        <p>Made with <i class="fa fa-heart"></i> by <a href="#">DesigningWorld</a></p>
-                    </div>
-                    <!-- Bottom Footer Copywrite Text Area End -->
-                </div>
-            </div>
+
         </div>
     </div>
 </footer>
 <!-- >>>>>>>>>>>>>>>> Footer Area End <<<<<<<<<<<<<<<< -->
 {% endblock body %}
+
+{% block javascripts %}
+
+{% endblock javascripts %}
 
