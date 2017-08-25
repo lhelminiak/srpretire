@@ -453,7 +453,7 @@ img {
 }
 
 .main_header_area {
-    height: 70px;
+
     width: 100%;
     z-index: 2;
 }
@@ -2723,11 +2723,11 @@ select option {
     background-color: rgba(52, 73, 94, 0.8);
     content: "";
     height: 100%;
-    left: -25%;
+    left: -15%;
     position: absolute;
     top: 0;
-    -webkit-transform: skewX(-30deg);
-    transform: skewX(-30deg);
+    -webkit-transform: skewX(-18deg);
+    transform: skewX(-18deg);
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     width: 100%;
