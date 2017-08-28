@@ -197,8 +197,7 @@ $(function() {
             left: '20px'
         },
         content: '<div>Central Florida</div>' +
-        '<div>874 Brightwater Circle Maitland, FL 32751 </div>' +
-        '<div><strong>Phone: (888) 202-3927 Ext: 711</strong></div>',
+        '<div>874 Brightwater Circle Maitland, FL 32751 </div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -218,8 +217,7 @@ $(function() {
             left: '20px'
         },
         content: '<div>Central Texas</div>' +
-        '<div>1250 S. Capital of Texas Highway Building 3, Suite 400 Austin, Texas 78746</div>' +
-        '<div><strong>Phone: (866) 901-4015</strong></div>',
+        '<div>1250 S. Capital of Texas Highway Building 3, Suite 400 Austin, Texas 78746</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -241,9 +239,7 @@ $(function() {
             left: '20px'
         },
         content: '<div>Great Lakes</div>' +
-        '<div>25434 Prairiewood Lane Shorewood, IL 60404</div>' +
-        '<div><strong>Phone: (888) 202-3927</strong></div>' +
-        '<div><strong>Fax: (888) 202-3927</strong></div>',
+        '<div>25434 Prairiewood Lane Shorewood, IL 60404</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -264,9 +260,7 @@ $(function() {
             left: '20px'
         },
         content: '<div>Michigan</div>' +
-        '<div>18600 Northville Road Northville, MI 48168</div>' +
-        '<div><strong>Phone: (248) 773-7046</strong></div>' +
-        '<div><strong>Fax: (734) 335-4457</strong></div>',
+        '<div>18600 Northville Road Northville, MI 48168</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -286,8 +280,7 @@ $(function() {
             left: '20px'
         },
         content: '<div>Mid Atlantic</div>' +
-        '<div>111 Bulifants Blvd., Suite D Williamsburg, VA 23188</div>' +
-        '<div><strong>Phone: (757) 645-3975</strong></div>',
+        '<div>111 Bulifants Blvd., Suite D Williamsburg, VA 23188</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -308,8 +301,7 @@ $(function() {
             left: '20px'
         },
         content: '<div>Mid Central</div>' +
-        '<div>500 Garrard Street Covington, KY 41011</div>' +
-        '<div><strong>Phone: (513) 602-2868</strong></div>',
+        '<div>500 Garrard Street Covington, KY 41011</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -329,8 +321,7 @@ $(function() {
             left: '20px'
         },
         content: '<div>Midwest</div>' +
-        '<div>2900 100th Street, Ste. 106 Urbandale, IA 50322</div>' +
-        '<div><strong>Phone: (515) 867-2444</strong></div>',
+        '<div>2900 100th Street, Ste. 106 Urbandale, IA 50322</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -350,8 +341,7 @@ $(function() {
             left: '20px'
         },
         content: '<div>Northeast</div>' +
-        '<div>42 Weybosset Street, Penthouse Providence, RI 02903</div>' +
-        '<div><strong>Phone: (401) 521-5588</strong></div>',
+        '<div>42 Weybosset Street, Penthouse Providence, RI 02903</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -372,8 +362,7 @@ $(function() {
             left: '20px'
         },
         content: '<div>Northern California</div>' +
-        '<div>1733 Woodside Rd, Suite 350 Redwood City, CA 94061</div>' +
-        '<div><strong>Phone: (650) 587-8616</strong></div>',
+        '<div>1733 Woodside Rd, Suite 350 Redwood City, CA 94061</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -393,9 +382,7 @@ $(function() {
             left: '20px'
         },
         content: '<div>Oklahoma</div>' +
-        '<div>2727 East 21st St. Suite 103 Tulsa, OK 74114</div>' +
-        '<div><strong>Phone: (918) 298-3050</strong></div>' +
-        '<div><strong>Fax: (918) 298-3747</strong></div>',
+        '<div>2727 East 21st St. Suite 103 Tulsa, OK 74114</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -415,8 +402,7 @@ $(function() {
             left: '20px'
         },
         content: '<div>Rocky Mountains</div>' +
-        '<div>5977 South Zenobia Court Littleton, CO 80123 </div>' +
-        '<div><strong>Phone: (720) 289-3833</strong></div>',
+        '<div>5977 South Zenobia Court Littleton, CO 80123 </div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -436,8 +422,7 @@ $(function() {
             left: '20px'
         },
         content: '<div>Wisconsin</div>' +
-                    '<div>100 N. Corporate Drive, Ste. 100 Brookfield, WI 53045</div>' +
-                    '<div><strong>Phone: (262) 439-4751</strong></div>',
+                    '<div>100 N. Corporate Drive, Ste. 100 Brookfield, WI 53045</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,

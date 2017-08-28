@@ -139,3 +139,17 @@
     margin-left: 300px;
     margin-right: 300px;
 }
+
+#contact-info {
+    padding-bottom: 40px;
+}
+
+#contact-icon {
+    font-size: 45px;
+    color: #0093c9;
+}
+
+#email-link:hover{
+    text-decoration: underline;
+    color: blue;
+}
