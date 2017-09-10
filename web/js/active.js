@@ -182,6 +182,17 @@
         });
     }
 
+    if ($.fn.navigation) {
+        $("#navigation1").navigation();
+        $("#navigation5").navigation({
+            hidden: true
+        });
+    }
+
+    $(".btn-show").click(function () {
+        $("#navigation5").data("navigation").toggleOffcanvas();
+    });
+
     // Magnific-popup Video Active Code
     if ($.fn.magnificPopup) {
         $('.video_btn').magnificPopup({
