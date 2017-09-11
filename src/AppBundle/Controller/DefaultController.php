@@ -42,7 +42,7 @@ class DefaultController extends Controller
 
 
     /**
-     * @Route("/technology", name="techology")
+     * @Route("/technology", name="technology")
      */
     public function technologyPageAction(Request $request){
         return $this->render('technology.html.twig');
@@ -53,5 +53,12 @@ class DefaultController extends Controller
      */
     public function yourAccountPageAction(Request $request){
         return $this->render('your-account.html.twig');
+    }
+
+    /**
+     * @Route("/retirement-plan-consulting", name="retirement-plan-consulting")
+     */
+    public function howWeDoItPageAction(Request $request){
+        return $this->render('retirement-plan-consulting.html.twig');
     }
 }

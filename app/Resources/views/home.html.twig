@@ -5,7 +5,7 @@
     <link href="{{ asset('css/slidea/slidea.css') }}" rel="stylesheet">
     <link href="{{ asset('css/slidea/themes/default.css') }}" rel="stylesheet">
     <link href="{{ asset('css/slidea/ui/default.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/pages/navbar.css') }}">
+    <link href="{{ asset('css/navigation.css') }}">
 
 {% endblock %}
 
@@ -17,168 +17,109 @@
 
 
 
+    <!-- <<<<<<<<<<<<<<<<<<<< Header Area Start <<<<<<<<<<<<<<<<<<<< -->
+    <header class="header_area">
+        <div class="container">
+            <nav id="navigation1" class="navigation">
+                <!-- Logo Area Start -->
+                <div class="nav-header">
+                    <a class="nav-brand" href="#"><img src="{{ asset('img/SRP-Logo.jpg') }}"></a>
+                    <div class="nav-toggle"></div>
+                </div>
+                <!-- Main Menus Wrapper -->
+                <div class="nav-menus-wrapper">
+                    <ul class="nav-menu align-to-right">
+                        <li><a href="#">People</a>
+                            <ul class="nav-dropdown">
+                                <li><a href="#" target="_blank">Our Story</a></li>
+                                <li><a href="#" target="_blank">Our Team</a></li>
+                                <li><a href="#" target="_blank">Office Map</a></li>
+                                <li><a href="#" target="_blank">Awards</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Processes</a>
+                            <ul class="nav-dropdown">
+                                <li><a href="#" target="_blank">Retirement Plan Consulting</a></li>
+                                <li><a href="#" target="_blank">Executive Benefits</a></li>
+                                <li><a href="#" target="_blank">Outsourced 3(38)</a></li>
+                                <li><a href="#" target="_blank">Endowments & Foundations</a></li>
+                                <li><a href="#" target="_blank">HSA</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Technology</a>
+                            <ul class="nav-dropdown">
+                                <li><a href="#" target="_blank">Home - 1</a></li>
+                                <li><a href="#" target="_blank">Home - 2</a></li>
+                                <li><a href="#" target="_blank">Home - 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Let's Connect</a>
+                            <ul class="nav-dropdown">
+                                <li><a href="#" target="_blank">Submit your RFP</a></li>
+                                <li><a href="#" target="_blank">Contact Us</a></li>
+                                <li><a href="#" target="_blank">Join Our Team</a></li>
+                                <li><a href="#" target="_blank">Open An Office</a></li>
+                                <li><a href="#" target="_blank">In the Press</a></li>
+                                <li><a href="#" target="_blank">Upcoming Webinars</a></li>
+                                <li><a href="#" target="_blank">Blog</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Your Account</a>
+                            <ul class="nav-dropdown">
+                                <li><a href="#" target="_blank">Fiduciary Archive</a></li>
+                                <li><a href="#" target="_blank">Plan Participant Portal</a></li>
+                                <li><a href="#" target="_blank">Wealth Management Log In</a></li>
+                                <li><a href="#" target="_blank">Financial Wellness Log In</a></li>
+                                <li><a href="#" target="_blank">HSA Log In</a></li>
+                                <li><a href="#" target="_blank">ERISA Training Log In</a></li>
+                            </ul>
+                        </li>
 
-    {#<header class="header-area">#}
-        {#<div class="main_header_area animated">#}
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- <<<<<<<<<<<<<<<<<<<< Header Area End <<<<<<<<<<<<<<<<<<<< -->
+
+    <!-- >>>>>>>>>>>>>>>> Header Start <<<<<<<<<<<<<<<<< -->
+{#<header class="header_area">#}
+    {#<!-- Main Header Area Start -->#}
+    {#<div class="main_header_area animated">#}
             {#<div class="row">#}
-                {#<div class="col-3">#}
+                {#<!-- Logo Area Start -->#}
+                {#<div class="col-md-2 col-lg-2" style="padding-left: 30px;">#}
                     {#<div class="logo_area">#}
                         {#<a href="index.html"><img src="img/SRP-Logo.jpg" alt=""></a>#}
                     {#</div>#}
                 {#</div>#}
-
-                {#<div class="col-9">#}
+                {#<!-- Menu Area Start -->#}
+                {#<div class="col-md-10 col-lg-10">#}
                     {#<div class="main_menu_area">#}
                         {#<div class="mainmenu">#}
                             {#<nav>#}
-                                {#<ul id="nav">#}
+                                {#<ul id="nav" class="nav-menu">#}
                                     {#<li class="current_page_item"><a href="#home">Home</a></li>#}
                                     {#<li><a href="#about">About</a></li>#}
-                                    {#<li><a href="#service">Solutions</a></li>#}
-                                    {#<li><a href="#work">Works</a></li>#}
-                                    {#<li><a href="#advisor">About Us</a></li>#}
-                                    {#<li><a href="#price">Price</a></li>#}
-                                    {#<li><a href="#blog"></a></li>#}
+                                    {#<li><a href="#service">Processes</a>#}
+                                        {#<ul class="nav-dropdown">#}
+                                            {#<li><a href="index.html" target="_blank">Home - 1</a></li>#}
+                                            {#<li><a href="index-2.html" target="_blank">Home - 2</a></li>#}
+                                            {#<li><a href="index-agency.html" target="_blank">Home - 3</a></li>#}
+                                        {#</ul>#}
+                                    {#</li>#}
+                                    {#<li><a href="#blog">Blog</a></li>#}
                                     {#<li><a href="#contact">Lets Connect</a></li>#}
                                 {#</ul>#}
                             {#</nav>#}
                         {#</div>#}
                     {#</div>#}
-
-
                 {#</div>#}
-
-
-
             {#</div>#}
-
-
-
-        {#</div>#}
-
-
-
-
-
-
-
-    {#</header>#}
-
-
-    <!-- >>>>>>>>>>>>>>>> nav Start <<<<<<<<<<<<<<<<< -->
-
-    {#<header class="header_area">#}
-        {#<!-- Main Header Area Start -->#}
-        {#<div class="main_header_area animated">#}
-                {#<div class="row">#}
-                    {#<!-- Logo Area Start -->#}
-                    {#<div class="col-md-2 col-lg-2">#}
-                        {#<div class="logo_area">#}
-                            {#<a href="index.html"><img src="img/SRP-Logo.jpg" alt=""></a>#}
-                        {#</div>#}
-                    {#</div>#}
-                    {#<!-- Menu Area Start -->#}
-                    {#<div class="col-md-10 col-lg-10">#}
-                        {#<div class="main_menu_area">#}
-                            {#<div class="mainmenu">#}
-                                {#<nav>#}
-                                    {#<ul id="nav">#}
-                                        {#<li class="current_page_item"><a href="#home">Home</a></li>#}
-                                        {#<li><a href="#about">About</a></li>#}
-                                        {#<li><a href="#service">Solutions</a></li>#}
-                                        {#<li><a href="#work">Works</a></li>#}
-                                        {#<li><a href="#advisor">About Us</a></li>#}
-                                        {#<li><a href="#price">Price</a></li>#}
-                                        {#<li><a href="#blog"></a></li>#}
-                                        {#<li><a href="#contact">Lets Connect</a></li>#}
-                                    {#</ul>#}
-                                {#</nav>#}
-                            {#</div>#}
-                        {#</div>#}
-                    {#</div>#}
-                {#</div>#}
-        {#</div>#}
-    {#</header>#}
-
-
-
-
-    <!-- >>>>>>>>>>>>>>>> nav end <<<<<<<<<<<<<<<<< -->
-
-
-
-
-    <!-- >>>>>>>>>>>>>>>> Header Start <<<<<<<<<<<<<<<<< -->
-<header class="header_area">
-    <!-- Main Header Area Start -->
-    <div class="main_header_area animated">
-            <div class="row">
-                <!-- Logo Area Start -->
-                <div class="col-md-2 col-lg-2" style="padding-left: 30px;">
-                    <div class="logo_area">
-                        <a href="index.html"><img src="img/SRP-Logo.jpg" alt=""></a>
-                    </div>
-                </div>
-                <!-- Menu Area Start -->
-                <div class="col-md-10 col-lg-10">
-                    <div class="main_menu_area">
-                        <div class="mainmenu">
-                            <nav>
-                                <ul id="nav">
-                                    <li class="current_page_item"><a href="#home">Home</a></li>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#service">Processes</a></li>
-                                    <li><a href="#blog">Blog</a></li>
-                                    <li><a href="#contact">Lets Connect</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-</header>
+    {#</div>#}
+{#</header>#}
 <!-- >>>>>>>>>>>>>>>> Header End <<<<<<<<<<<<<<<< -->
 
-
-
-
-
-
-
-
-
-<!-- >>>>>>>>>>>>>>>> Welcome Area Start <<<<<<<<<<<<<<<< -->
-{#<section class="welcome_area height_600 background-overlay jarallax" id="home" style="background-image: url(img/mountain_view.jpg);">#}
-    {#<!-- Welcome Text -->#}
-    {#<div class="table">#}
-        {#<div class="table_cell">#}
-            {#<div class="container">#}
-                {#<div class="row">#}
-                    {#<div class="col-12 col-sm">#}
-                        {#<div class="welcome_text white item">#}
-                            {#<h2>Let Us Help You Take The Next Step In Your life</h2>#}
-                            {#<p>sub heading</p>#}
-                            {#<a href="#" class="btn default-button" role="button">Discover More</a>#}
-                        {#</div>#}
-                    {#</div>#}
-                    {#<div class="col-12 col-sm hidden-xs">#}
-                        {#<div class="wel_video item text-center">#}
-                            {#<div class="table">#}
-                                {#<div class="table_cell">#}
-                                    {#<!-- Video Link -->#}
-                                    {#<a href="https://www.youtube.com/watch?v=ru3cr01DbWo" class="video_btn wow fadeInUp" data-wow-delay="0.2s"><i class="ion-play" aria-hidden="true"></i></a>#}
-                                    {#<p>Watch our video!</p>#}
-                                {#</div>#}
-                            {#</div>#}
-                        {#</div>#}
-                    {#</div>#}
-                {#</div>#}
-            {#</div>#}
-        {#</div>#}
-    {#</div>#}
-{#</section>#}
-<!-- >>>>>>>>>>>>>>>> Welcome Area End <<<<<<<<<<<<<<<< -->
     <section class="welcome_area height_600" id="home">
         <div class="slidea" id="slidea">
 
