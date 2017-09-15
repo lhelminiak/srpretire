@@ -84,3 +84,47 @@
     height: 150px;
 }
 
+.key_step_text{
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 414px) {
+
+    .breadcumb_area{
+        height: 200px;
+
+    }
+
+    #container{
+        height: 200px;
+    }
+
+    .breadcumb_section{
+        margin-top: 50px;
+    }
+
+    .page_title h4 {
+        font-size: 2.5rem;
+    }
+
+    .key_step_text{
+        text-align: left;
+    }
+
+    .section_title_text{
+        font-size: 30px !important;
+    }
+
+    .invest_wisely_section{
+        padding-top: 50px;
+    }
+
+    .invest_wisely_title{
+        margin-bottom: 5px;
+    }
+
+
+}
+

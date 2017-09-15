@@ -33,6 +33,10 @@
 
 }
 
+.begins_with_conversation{
+    font-size: 26px;
+}
+
 @media screen and (max-width: 414px) {
 
     .breadcumb_area{
@@ -78,7 +82,17 @@
 
     }
 
+    .defined_contribution_services {
+        text-align: center;
+    }
 
+    .begins_with_conversation{
+        font-size: 18px;
+    }
+
+    .defined_benefit_services{
+        text-align: center;
+    }
 
 
 }
