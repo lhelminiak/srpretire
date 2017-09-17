@@ -61,4 +61,12 @@ class DefaultController extends Controller
     public function howWeDoItPageAction(Request $request){
         return $this->render('retirement-plan-consulting.html.twig');
     }
+
+
+    /**
+     * @Route("/lets-connect", name="lets-connect")
+     */
+    public function letsConnectPageAction(Request $request){
+        return $this->render('connect.html.twig');
+    }
 }

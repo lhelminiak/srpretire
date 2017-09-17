@@ -87,6 +87,14 @@
 .key_step_text{
     text-align: center;
 }
+.section_title_text {
+    font-size: 3.0rem;
+}
+
+.program_goal{
+    text-align: center;
+    font-size: 22px !important;
+}
 
 
 
