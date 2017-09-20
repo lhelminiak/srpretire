@@ -1,0 +1,19 @@
+.default-title h2{
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.default-description p {
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.what_we_do_area .section_heading  p , .what_we_do_area .section_heading h3{
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.choose_us_overlay_text a{
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+}

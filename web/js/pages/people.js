@@ -197,7 +197,8 @@ $(function() {
             left: '20px'
         },
         content: '<div>Central Florida</div>' +
-        '<div>874 Brightwater Circle Maitland, FL 32751 </div>',
+        '<div>874 Brightwater Circle Maitland, FL 32751 </div>'+
+        '<div>Phone: 888-202-3927</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -217,7 +218,8 @@ $(function() {
             left: '20px'
         },
         content: '<div>Central Texas</div>' +
-        '<div>1250 S. Capital of Texas Highway Building 3, Suite 400 Austin, Texas 78746</div>',
+        '<div>1250 S. Capital of Texas Highway Building 3, Suite 400 Austin, Texas 78746</div>'+
+        '<div>Phone: 866-901-4015</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -239,7 +241,8 @@ $(function() {
             left: '20px'
         },
         content: '<div>Great Lakes</div>' +
-        '<div>25434 Prairiewood Lane Shorewood, IL 60404</div>',
+        '<div>25434 Prairiewood Lane Shorewood, IL 60404</div>'+
+        '<div>Phone: 888-202-3927</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -260,7 +263,8 @@ $(function() {
             left: '20px'
         },
         content: '<div>Michigan</div>' +
-        '<div>18600 Northville Road Northville, MI 48168</div>',
+        '<div>18600 Northville Road Northville, MI 48168</div>'+
+        '<div>Phone: 248-773-7046</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -280,7 +284,8 @@ $(function() {
             left: '20px'
         },
         content: '<div>Mid Atlantic</div>' +
-        '<div>111 Bulifants Blvd., Suite D Williamsburg, VA 23188</div>',
+        '<div>111 Bulifants Blvd., Suite D Williamsburg, VA 23188</div>'+
+        '<div>Phone: 757-645-3975</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -301,7 +306,8 @@ $(function() {
             left: '20px'
         },
         content: '<div>Mid Central</div>' +
-        '<div>500 Garrard Street Covington, KY 41011</div>',
+        '<div>500 Garrard Street Covington, KY 41011</div>'+
+        '<div>Phone: 513-602-2868</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -321,7 +327,8 @@ $(function() {
             left: '20px'
         },
         content: '<div>Midwest</div>' +
-        '<div>2900 100th Street, Ste. 106 Urbandale, IA 50322</div>',
+        '<div>2900 100th Street, Ste. 106 Urbandale, IA 50322</div>'+
+        '<div>Phone: 515-867-2444</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -341,7 +348,8 @@ $(function() {
             left: '20px'
         },
         content: '<div>Northeast</div>' +
-        '<div>42 Weybosset Street, Penthouse Providence, RI 02903</div>',
+        '<div>42 Weybosset Street, Penthouse Providence, RI 02903</div>'+
+        '<div>Phone: 401-521-5588</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -362,7 +370,8 @@ $(function() {
             left: '20px'
         },
         content: '<div>Northern California</div>' +
-        '<div>1733 Woodside Rd, Suite 350 Redwood City, CA 94061</div>',
+        '<div>1733 Woodside Rd, Suite 350 Redwood City, CA 94061</div>'+
+        '<div>Phone: 650-587-8616</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -382,7 +391,8 @@ $(function() {
             left: '20px'
         },
         content: '<div>Oklahoma</div>' +
-        '<div>2727 East 21st St. Suite 103 Tulsa, OK 74114</div>',
+        '<div>2727 East 21st St. Suite 103 Tulsa, OK 74114</div>'+
+        '<div>Phone: 918-298-3050</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -402,7 +412,8 @@ $(function() {
             left: '20px'
         },
         content: '<div>Rocky Mountains</div>' +
-        '<div>5977 South Zenobia Court Littleton, CO 80123 </div>',
+        '<div>5977 South Zenobia Court Littleton, CO 80123 </div>'+
+        '<div>Phone: 720-289-3833</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,
@@ -422,7 +433,8 @@ $(function() {
             left: '20px'
         },
         content: '<div>Wisconsin</div>' +
-                    '<div>100 N. Corporate Drive, Ste. 100 Brookfield, WI 53045</div>',
+                    '<div>100 N. Corporate Drive, Ste. 100 Brookfield, WI 53045</div>'+
+        '<div>Phone: 262-439-4751</div>',
         showCloseButton: false,
         closeWhenOthersOpen: true,
         closeOnMapClick: true,

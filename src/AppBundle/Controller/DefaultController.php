@@ -40,6 +40,13 @@ class DefaultController extends Controller
         return $this->render('retirement-plan-consulting.html.twig');
     }
 
+    /**
+     * @Route("/executive-benefits", name="executive-benefits")
+     */
+    public function executiveBenefitsPageAction(Request $request){
+        return $this->render('executive-benefits.html.twig');
+    }
+
 
     /**
      * @Route("/technology", name="technology")
