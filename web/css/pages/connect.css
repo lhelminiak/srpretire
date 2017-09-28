@@ -52,6 +52,22 @@
     border-color: white;
 }
 
+
+.box{
+    /*height: 100%;*/
+    background-color: #0093c9;
+    height: 300px;
+}
+
+.box2{
+    height: 100%;
+    background-color: #0093c9;
+    border-radius: 30px;
+    border-color: white;
+    border-style: solid;
+    border-width: 20px;
+}
+
 /*Material Card*/
 
 .card {
