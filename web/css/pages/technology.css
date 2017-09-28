@@ -89,6 +89,11 @@ hr{
     flex-wrap: wrap;
 }
 
+.benchmarking-image{
+    border: 1px solid #f6f6f6;
+    padding: 2px;
+    text-align: center;
+}
 
 
 
