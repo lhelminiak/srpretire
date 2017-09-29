@@ -76,4 +76,11 @@ class DefaultController extends Controller
     public function letsConnectPageAction(Request $request){
         return $this->render('connect.html.twig');
     }
+
+    /**
+     * @Route("/submit-rfp", name="submit-rfp")
+     */
+    public function submitRfpPageAction(Request $request){
+        return $this->render('rfp.html.twig');
+    }
 }
