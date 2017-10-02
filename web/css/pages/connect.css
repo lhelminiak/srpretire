@@ -84,42 +84,70 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-
-
-
-/*  GRID OF FOUR   ============================================================================= */
-
-
-.span_4_of_4 {
-    width: 100%;
-}
-
-.span_3_of_4 {
-    width: 74.6%;
-}
-
-.span_2_of_4 {
-    width: 49.2%;
-}
-
-.span_1_of_4 {
-    width: 23.8%;
+.srpblue{
+    background-color: #0093c9;
 }
 
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
-    .span_4_of_4 {
-        width: 100%;
-    }
-    .span_3_of_4 {
-        width: 100%;
-    }
-    .span_2_of_4 {
-        width: 100%;
-    }
-    .span_1_of_4 {
-        width: 100%;
-    }
+/* Materialize card with hover effect */
+
+.card-panel.hoverable {
+    overflow: hidden;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    color: white;
+    height: 400px;
 }
+.card-panel.hoverable.small {
+    height: 400px;
+}
+.card-panel.hoverable.medium {
+    height: 400px;
+}
+.card-panel.hoverable.large {
+    height: 500px;
+}
+.card-panel.hoverable .card-panel-header {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%) scale(1.5);
+    transform: translateY(-50%) scale(1.5);
+    -webkit-transition: top 0.25s 0.1s, -webkit-transform 0.25s ease 0.1s;
+    transition: top 0.25s 0.1s, -webkit-transform 0.25s ease 0.1s;
+    transition: top 0.25s 0.1s, transform 0.25s ease 0.1s;
+    transition: top 0.25s 0.1s, transform 0.25s ease 0.1s, -webkit-transform 0.25s ease 0.1s;
+}
+.card-panel.hoverable .card-panel-icon {
+    display: block;
+    text-align: center;
+}
+.card-panel.hoverable .card-panel-caption {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+}
+.card-panel.hoverable .card-panel-content {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    -webkit-transition: opacity 0.8s, -webkit-transform 0.25s;
+    transition: opacity 0.8s, -webkit-transform 0.25s;
+    transition: transform 0.25s, opacity 0.8s;
+    transition: transform 0.25s, opacity 0.8s, -webkit-transform 0.25s;
+}
+.card-panel.hoverable:hover .card-panel-header {
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+    top: 0;
+}
+.card-panel.hoverable:hover .card-panel-content {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+
