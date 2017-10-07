@@ -1,14 +1,17 @@
 
-.grey-background {
+
+.grey-background{
     background-color: #f6f6f6;
 }
 
-#container {
+
+#container{
     height: 336px;
 }
 
-.background-overlay:before {
-    background-color: rgba(0, 147, 201, 0.4);
+
+.background-overlay:before{
+    background-color: rgba(0,147,201,0.4);
 }
 
 .page_title h4 {
@@ -18,18 +21,19 @@
 
 }
 
-.breadcumb_area {
+
+.breadcumb_area{
     /*padding-top: 0px;*/
     /*padding-bottom: 0px;*/
     height: 336px;
 
 }
 
-.breadcumb_section {
+.breadcumb_section{
     margin-top: 130px;
 }
 
-.built_by_advisors h4 {
+.built_by_advisors h4{
     font-size: 2.0rem;
     color: #0093c9;
     padding-top: 10px;
@@ -39,7 +43,7 @@
     font-size: 20px;
 }
 
-.small_card {
+.small_card{
     background-color: black;
     height: 200px;
     /*padding-top: 5px;*/
@@ -48,13 +52,14 @@
     border-color: white;
 }
 
-.box {
+
+.box{
     /*height: 100%;*/
     background-color: #0093c9;
     height: 300px;
 }
 
-.box2 {
+.box2{
     height: 100%;
     background-color: #0093c9;
     border-radius: 30px;
@@ -75,19 +80,18 @@
     width: 300px;
 }
 
-.srpblue {
+
+
+.srpblue{
     background-color: #0093c9;
 }
 
 .pipeline_icon {
     margin-top: -10px;
     margin-bottom: -10px;
-    font-size: 36px;
+    font-size:36px;
 }
 
-.card-panel-content ul li {
-    color: white !important;
-}
 
 /* Materialize card with hover effect */
 
@@ -99,21 +103,18 @@
     color: white;
     height: 400px;
 }
-
 .card-panel.hoverable.small {
     height: 400px;
 }
-
 .card-panel.hoverable.medium {
     height: 400px;
 }
-
 .card-panel.hoverable.large {
     height: 500px;
 }
 
-.card-panel-header {
-    padding-top: 10px;
+.card-panel-header{
+    padding-top:10px;
 }
 
 .card-panel.hoverable .card-panel-header {
@@ -126,18 +127,15 @@
     transition: top 0.25s 0.1s, transform 0.25s ease 0.1s;
     transition: top 0.25s 0.1s, transform 0.25s ease 0.1s, -webkit-transform 0.25s ease 0.1s;
 }
-
 .card-panel.hoverable .card-panel-icon {
     display: block;
     text-align: center;
 }
-
 .card-panel.hoverable .card-panel-caption {
     display: block;
     text-align: center;
     font-size: 1rem;
 }
-
 .card-panel.hoverable .card-panel-content {
     opacity: 0;
     -webkit-transform: translateY(20px);
@@ -147,13 +145,11 @@
     transition: transform 0.25s, opacity 0.8s;
     transition: transform 0.25s, opacity 0.8s, -webkit-transform 0.25s;
 }
-
 .card-panel.hoverable:hover .card-panel-header {
     -webkit-transform: translateY(0) scale(1);
     transform: translateY(0) scale(1);
     top: 0;
 }
-
 .card-panel.hoverable:hover .card-panel-content {
     -webkit-transform: translateY(0);
     transform: translateY(0);

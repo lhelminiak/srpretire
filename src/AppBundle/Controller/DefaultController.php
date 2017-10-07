@@ -83,4 +83,11 @@ class DefaultController extends Controller
     public function submitRfpPageAction(Request $request){
         return $this->render('rfp.html.twig');
     }
+
+    /**
+     * @Route("/test", name="test")
+     */
+    public function testPageAction(Request $request){
+        return $this->render('test.html.twig');
+    }
 }
