@@ -1,3 +1,63 @@
+
+
+/* for three images at top of /technology page*/
+.technology_img{
+    max-width: 60%;
+}
+/* for the text above each technology image*/
+.technology_img_text {
+    font-weight: 600;
+    font-size: 36px;
+    color: #0093c9;
+}
+/* for the regular text in a section that isn't the section's heading*/
+.technology_section_sub_heading {
+    color: #000 !important;
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    margin: 0 auto !important;
+    max-width: none !important;
+    text-transform: none !important;
+}
+
+
+.training_objectives h6{
+    font-weight: 500;
+    font-size: 18px;
+    color: #0093c9;
+}
+
+.risk_management_container{
+    height: 350px;
+}
+
+
+.vertical-center{
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+}
+
+
+.benchmark_slider_text span {
+    font-weight:500;
+    font-size:18px;
+    color: #0093c9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .grey-background{
     background-color: #f6f6f6;
 }
@@ -16,6 +76,7 @@ hr{
     margin-right: 25px;
 }
 
+/* for blue overlay over image at top of web page */
 .background-overlay:before{
     background-color: rgba(0,147,201,0.4);
 }
@@ -29,10 +90,7 @@ hr{
 
 
 .breadcumb_area{
-    /*padding-top: 0px;*/
-    /*padding-bottom: 0px;*/
     height: 336px;
-
 }
 
 .breadcumb_section{
@@ -79,7 +137,7 @@ hr{
 }
 
 .program_goal{
-    text-align: center;
+    /*text-align: center;*/
     font-size: 22px !important;
 }
 
@@ -95,6 +153,76 @@ hr{
     text-align: center;
 }
 
+
+.ui {
+    width: 900px;
+    height: 450px;
+    margin-top: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    box-shadow: none;
+}
+
+.ui_box {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    background: white;
+    color: #0093c9 !important;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #0093c9;
+    float: left;
+    box-shadow: -1px 0px rgba(255, 255, 255, 0.07);
+    cursor: pointer;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition-property: background,-webkit-transform;
+    transition-property: background,-webkit-transform;
+    transition-property: transform,background;
+    transition-property: transform,background,-webkit-transform;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+
+.ui_box h1, .ui_box p {
+    color: #0093c9;
+}
+
+.ui_box__inner p {
+    font-size: 14px;
+}
+
+.ui_box__inner {
+    padding: 30px;
+}
+
+.ui_box_hover{
+    background: #0093c9;
+    border-style: none;
+    color:white !important;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition-property: background,-webkit-transform;
+    transition-property: background,-webkit-transform;
+    transition-property: transform,background;
+    transition-property: transform,background,-webkit-transform;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    position: relative;
+    z-index: 1;
+}
+.ui_box_hover h1 , .ui_box_hover p {
+    color:white;
+}
+
+.ui_box_hover hr {
+    border-color: white;
+}
+
+.rangeslider-container {
+    width: 800px;
+}
 
 
 

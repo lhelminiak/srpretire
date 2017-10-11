@@ -260,10 +260,6 @@
         });
     }
 
-    // wow Active Code
-    if ($(window).width() > 767) {
-        new WOW().init();
-    }
 
     // Footer Reveal Active Code
     if ($.fn.footerReveal) {

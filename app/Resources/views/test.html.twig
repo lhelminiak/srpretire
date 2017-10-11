@@ -1,234 +1,28 @@
-{% extends 'base.html.twig' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-{% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('css/pages/connect.css') }}">
 
-{% endblock %}
+</head>
 
-{% block body %}
 
-    <!-- >>>>>>>>>>>>>>>> Breadcumb Area Start <<<<<<<<<<<<<<<< -->
-    <section class="breadcumb_area background-overlay" style="background-image: url(img/lets-connect.jpg);">
-        <div id="container" class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="breadcumb_section text-center">
-                        <!-- Breadcumb Page Title -->
-                        <div class="page_title">
-                            <h4>Let's Connect</h4>
-                        </div>
-                        <!-- Breadcumb Page Pagination -->
-                        <ol class="breadcrumb d-inline-block">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Let's Connect</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- >>>>>>>>>>>>>>>> Breadcumb Area End <<<<<<<<<<<<<<<< -->
 
 
-    <!-- >>>>>>>>>>>>>>>> Open an office Area start <<<<<<<<<<<<<<<< -->
 
-    <section class="invest_wisely_section product_landing key_features_area section_padding_100 grey-background">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Section Heading Start -->
-                    <div class=" invest_wisely_title section_heading wow fadeInUp text-center" style="visibility: visible; animation-name: fadeInUp;">
-                        <h2 class="section_title_text">Open An Office</h2>
-                    </div>
-                </div>
-            </div>
+<body>
 
+{% block body %}{% endblock %}
+<!---------- JAVASCRIPTS ---------->
+<script src={{ asset('js/jquery/jquery-2.2.4.min.js') }}></script>
 
 
+{% block javascripts %}{% endblock %}
+</body>
+</html>
 
 
-            <div class="row card-3" style="background-color: #fff; border-radius: 3px;">
-                <div class="col-12 built_by_advisors">
-                    <h4 class="text-center">SRP... Built By Advisors</h4>
 
-                    <p>Reinventing Non-client facing activities waste a tremendous amount of time for advisors.
-                        These are activities that hold back growth and destroy margins.</p>
 
-                    <p style="padding-bottom: 15px">SRP’s Operations team is designed to eliminate or co-source a large percentage of those
-                        tasks, allowing you to focus on growth opportunities and increase the value of your
-                        practice. Leverage our time and experience.</p>
-                </div>
 
-            </div>
 
 
-
-        </div>
-
-
-
-
-
-    </section>
-
-    <!-- >>>>>>>>>>>>>>>> Open an office Area end <<<<<<<<<<<<<<<< -->
-
-    <div class="container" style="margin-bottom: 5%;">
-        <div class="row">
-
-            <div class="col-sm-12 col-md-6 col-lg-6">
-                <div class="card-panel hoverable small srpblue">
-                    <div class="card-panel-header">
-                        <span class="card-panel-icon"><i class="fa fa-2x fa-sitemap"></i></span>
-                        <span class="card-panel-caption">SRP Operations</span>
-                    </div>
-
-
-                    <div class="card-panel-content">
-                        <ul style="padding-left: 1%; font-size: 16px;">
-                            <li><span> &#9679; </span>Quarterbacks comprehensive service plan management</li>
-                            <li><span> &#9679; </span>Schedule &amp; manage service plan deliverables for investment committee and plan review meetings, meeting minute tracking, investment change management</li>
-                            <li><span> &#9679; </span>Participant education, newsletters, enrollment events</li>
-                            <li><span> &#9679; </span>Plan fiduciary &amp; governance compliance</li>
-                            <li><span> &#9679; </span>Audit of plan’s fiduciary &amp; governance documents</li>
-                            <li><span> &#9679; </span>Annual audit, IRS and DOL audit support</li>
-                            <li><span> &#9679; </span>Maintain cloud-based client portal for plan fiduciaries</li>
-                            <li><span> &#9679; </span>Vendor relationship management (recordkeeper, TPA), including plan installations, conversions and general plan/participant service items</li>
-                            <li><span> &#9679; </span>Plan &amp; participant management support</li>
-
-
-                        </ul>
-
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-6">
-                <div class="card-panel hoverable small srpblue">
-                    <div class="card-panel-header">
-                        <span class="card-panel-icon pipeline_icon"><i class="ion-android-globe"></i></span>
-
-                        <span class="card-panel-caption">Expand Your Pipeline</span>
-                    </div>
-                    <div class="card-panel-content">
-                        <ul style="padding-left: 1%; font-size: 16px;">
-                            <li><span> &#9679; </span>Social Media Campaigns</li>
-                            <li><span> &#9679; </span>Speaking Engagements</li>
-                            <li><span> &#9679; </span>Monthly Webinars</li>
-                            <li><span> &#9679; </span>Monthly Newsletters</li>
-                            <li><span> &#9679; </span>Telemarketing</li>
-                            <li><span> &#9679; </span>RFP Desk</li>
-                            <li><span> &#9679; </span>Mailing Campaigns</li>
-                            <li><span> &#9679; </span>Team Selling</li>
-
-
-                        </ul>
-
-
-                    </div>
-
-
-                </div>
-            </div>
-
-
-
-
-
-        </div>
-    </div>
-
-
-    <div class="container">
-        <div class="row">
-
-
-            <div class="col-sm-12 col-md-6 col-lg-6">
-                <div class="card-panel hoverable small srpblue">
-                    <div class="card-panel-header">
-                        {#<span class="card-panel-icon"><i class="material-icons">Consulting</i></span>#}
-                        <span class="card-panel-icon pipeline_icon"><i class="ion-clipboard"></i></span>
-
-                        <span class="card-panel-caption">Consulting</span>
-                    </div>
-                    <div class="card-panel-content">
-                        <ul style="padding-left: 1%; font-size: 16px;">
-                            <li><span> &#9679; </span>Small plan solutions</li>
-                            <li><span> &#9679; </span>Fiduciary Risk Management System</li>
-                            <li><span> &#9679; </span>Investment Due Diligence</li>
-                            <li><span> &#9679; </span>Participant Outcomes</li>
-                            <li><span> &#9679; </span>Total Retirement Outcome Analyzer</li>
-                            <li><span> &#9679; </span>Total Retirement Solutions</li>
-                            <li><span> &#9679; </span>Institutional Services</li>
-                            <li><span> &#9679; </span>SRP Wealth</li>
-
-
-                        </ul>
-
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-6">
-                <div class="card-panel hoverable small srpblue">
-                    <div class="card-panel-header">
-                        {#<span class="card-panel-icon"><i class="material-icons">work</i></span>#}
-                        <span class="card-panel-icon pipeline_icon"><i class="ion-android-cloud-done"></i></span>
-
-                        <span class="card-panel-caption">Technology Evolved</span>
-                    </div>
-                    <div class="card-panel-content">
-                        <ul style="padding-left: 1%; font-size: 16px;">
-                            <li><span> &#9679; </span>Comprehensive Content Library</li>
-                            <li><span> &#9679; </span>Comprehensive Video Library</li>
-                            <li><span> &#9679; </span>Clients Sites &amp; Fiduciary Archives</li>
-                            <li><span> &#9679; </span>Fiduciary Education Center</li>
-                            <li><span> &#9679; </span>Financial Wellness</li>
-                            <li><span> &#9679; </span>CRM, Exchange, RPAG, MPi, PlanTools, TDF Analyzer, etc…</li>
-                            <li><span> &#9679; </span>CyberSecurity</li>
-                        </ul>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% endblock %}
-
-{% block javascripts %}
-
-    <script type="text/javascript" src="{{ asset('web/js/pages/connect.js') }}"></script>
-
-{% endblock %}

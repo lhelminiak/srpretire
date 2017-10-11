@@ -35,3 +35,25 @@
         margin: 0 auto 15px;
     }
     /* Place your custom css code here */
+
+    .srpblue {
+        color:  #0093c9;
+    }
+
+
+
+
+    .mt30 {
+        margin-top:30px;
+    }
+
+    .mt45 {
+        margin-top:45px;
+    }
+
+
+
+
+    .fw500{
+        font-weight:500;
+    }
