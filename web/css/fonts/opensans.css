@@ -6,8 +6,8 @@ body {
 p,
 ul li,
 ol li {
-    font-weight: 300;
-    color: #111;
+    /*font-weight: 300;*/
+    /*color: #111;*/
 }
 
 a,
@@ -17,5 +17,5 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 400;
+    /*font-weight: 400;*/
 }

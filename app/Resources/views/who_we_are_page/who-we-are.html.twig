@@ -1,6 +1,7 @@
-{% extends 'base.html.twig' %}
+{% extends 'content_base.html.twig' %}
 
 {% block stylesheets %}
+    {{ parent() }}
     <link rel="stylesheet" href="{{ asset('assets/bundles/snazzy-info-window/snazzy-info-window.css') }}">
     <link rel="stylesheet" href="{{ asset('css/pages/people.css') }}">
 
@@ -341,6 +342,11 @@
 
 
 {% block javascripts %}
+    {{ parent() }}
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCzEVePg6BKjFfaZzNVcxl465gprUhq2Wo&callback=initMap"></script>
     <script type="text/javascript" src="{{ asset('assets/bundles/snazzy-info-window/snazzy-info-window.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/map-active.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/pages/people.js') }}"></script>
+
 {% endblock %}
