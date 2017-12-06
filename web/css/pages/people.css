@@ -218,7 +218,7 @@
 
 #our_team_wrapper{
     background-color: #F5F5F5;
-    height: 900px;
+    /*height: 900px;*/
 }
 
 #our_team_wrapper h1{
@@ -238,7 +238,7 @@
 }
 
 #our_team_container {
-    height: 500px;
+    /*height: 500px;*/
     padding-top: 5%;
 
 }

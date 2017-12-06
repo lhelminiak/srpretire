@@ -638,7 +638,7 @@ $(function () {
         defaults: {
             navItems: "a",
             currentClass: "current_page_item",
-            changeHash: !1,
+            changeHash: 1,
             easing: "swing",
             filter: "",
             scrollSpeed: 750,
