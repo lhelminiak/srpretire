@@ -2,12 +2,12 @@
 
 .default-title h2{
     color: white;
-    text-shadow: 1px 1px 2px #000;
+    /*text-shadow: 1px 1px 2px #000;*/
 }
 
 .default-description p {
     color: white;
-    text-shadow: 1px 1px 2px #000;
+    /*text-shadow: 1px 1px 2px #000;*/
 }
 
 .what_we_do_area .section_heading  p , .what_we_do_area .section_heading h3{
@@ -58,6 +58,37 @@
 
 
 /* section-1-carousel */
+.carousel {
+    margin-top:70px;
+}
+
+#title-one {
+    text-align: center;
+}
+
+#title-one h2{
+    font-size: 96px;
+    font-weight: 600;
+
+}
+
+.our_why {
+    position:absolute;
+    z-index: 999999;
+    top: 20%;
+    left: 15%;
+}
+
+.our_why h1{
+    font-size: 96px;
+    font-weight: 600;
+    color:white;
+}
+
+.our_why_container {
+    margin-top: 50px;
+}
+
 
 /* tablet css */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -313,6 +344,7 @@
 }
 
 .single_speciality {
+    cursor: pointer;
     background-color: #f6f6f6;
     border-radius: 4px;
     margin-bottom: 30px;
@@ -330,6 +362,7 @@
 }
 
 .single_speciality_text {
+    text-align:center;
     margin-left: 45px;
     position: relative;
     z-index: 1;
@@ -342,11 +375,14 @@
 .single_speciality_icon {
     left: 15px;
     position: absolute;
-    top: 15px;
+    top: 10%;
+
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
 }
-
+.bar_icon {
+    top: 20%;
+}
 .our_speciality_area .single_speciality_icon i {
     color: #0093c9;
     font-size: 30px;
@@ -354,7 +390,7 @@
 
 .single_speciality_text>h5 {
     text-transform: capitalize;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
 }

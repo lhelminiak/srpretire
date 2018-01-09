@@ -10,25 +10,25 @@
 {% block body %}
 
     <!-- >>>>>>>>>>>>>>>> Breadcumb Area Start <<<<<<<<<<<<<<<< -->
-    <section class="breadcumb_area background-overlay" style="background-image: url(img/people.jpg);">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="breadcumb_section text-center">
-                        <!-- Breadcumb Page Title -->
-                        <div class="page_title">
-                            <h4>Who We Are</h4>
-                        </div>
-                        <!-- Breadcumb Page Pagination -->
-                        <ol class="breadcrumb d-inline-block">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Who We Are</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    {#<section class="breadcumb_area background-overlay" style="background-image: url(img/people.jpg);">#}
+        {#<div class="container">#}
+            {#<div class="row">#}
+                {#<div class="col-12">#}
+                    {#<div class="breadcumb_section text-center">#}
+                        {#<!-- Breadcumb Page Title -->#}
+                        {#<div class="page_title">#}
+                            {#<h4>Who We Are</h4>#}
+                        {#</div>#}
+                        {#<!-- Breadcumb Page Pagination -->#}
+                        {#<ol class="breadcrumb d-inline-block">#}
+                            {#<li class="breadcrumb-item"><a href="#">Home</a></li>#}
+                            {#<li class="breadcrumb-item active">Who We Are</li>#}
+                        {#</ol>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+    {#</section>#}
     <!-- >>>>>>>>>>>>>>>> Breadcumb Area End <<<<<<<<<<<<<<<< -->
 
     <div id="our_story_wrapper">
@@ -39,14 +39,18 @@
                     <div class="our_story_content text-center">
                         <h1>Our story</h1>
                         <hr>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Fusce finibus erat a ante luctus, ac elementum turpis mattis.
-                            Nullam pellentesque diam eu consequat varius. Donec sodales enim sed suscipit viverra.
-                            Donec fermentum ac odio ut imperdiet. Donec condimentum leo vel viverra tincidunt. In hac habitasse platea dictumst.
-                            Pellentesque accumsan metus a sodales varius. Aliquam nec aliquet neque. Integer metus enim, malesuada nec urna vitae,
-                            laoreet pretium massa. Phasellus eget ante massa. Donec interdum augue tortor, et pharetra sem mattis nec. Quisque eget est at
-                            nisl sollicitudin rhoncus.
+
+                        <p>Strategic Retirement Partners is an independent retirement plan consulting firm that advises on plans representing the retirement aspirations of tens of thousands of employees.   We support plan sponsors in understanding and fulfilling their fiduciary responsibilities to their plan, their employees, and their beneficiaries. We currently consult on over 500 corporate and non-profit plans nationwide.
                         </p>
+
+                        <p>A bit of history: The acquisition of 401(k) Advisors, Inc. by NFP served as a catalyst for the formation of Strategic Retirement Partners (SRP). Shortly following the event, a supermajority of 401(k) Advisor affiliates pooled human resources and intellectual capital to form Strategic Retirement Partners, LLC, a firm that is truly unique by design. SRP was founded by a veteran group of Advisors with the shared belief that after working for decades during a lifetime, one should be able to retire with dignity and grace. Our sole focus is helping our Plan Sponsors make that happen for those employees within their care.</p>
+
+                        <p>Today, SRP has offices throughout the United States that are strategically located to deliver best-in-class service and expertise to help our clients provide an exceptional retirement plan to their employees. The SRP team consists of 50+ associates with significant retirement plan expertise and an average industry tenure of 15+ years. We currently serve over 500 corporate and non-profit plans, $6 billion in retirement plan assets, and represent the retirement aspirations of tens of thousands of plan participants.</p>
+
+                        <p>We approach client service with a collaborative style delivered by a dedicated plan consultant team in one of our regional offices.  This team is further supported by specialists who are specifically focused in the areas of ERISA Compliance, Investment Research, Provider Analysis, Fee Benchmarking, Employee Education, and Executive Benefits. We wake up every day with a renewed and unparalleled commitment to excellence that is supported by the latest technology, deep research capabilities, operational efficiencies, and a craftsman-like focus on detail. We adhere to operating principles and values that emphasize independence, work ethic, and a laser-like focus on the needs of our clients.</p>
+
+                        <p>As an ERISA fiduciary to your retirement plan, we strive to be objective and rigorous. And if we don’t look or sound like a “Wall Street” firm, it is entirely by design.</p>
+
                     </div>
                 </div>
             </div>
@@ -79,27 +83,7 @@
 
                             <div class="row portfolio-column">
 
-                                <!-- Single gallery Item Start -->
-                                <div class="col-12 col-md-4 col-lg-3 column_single_gallery_item mb-30 wow fadeInUp consultant">
-                                    <img src="{{ asset('img/employee-images/Kollada_1.jpg')}}" alt="">
-                                    <!-- Single gallery Item hover caption -->
-                                    <div class="hover_overlay">
-                                        <div class="table">
-                                            <div class="table_cell">
-                                                <div class="gallery_info">
-                                                    <h5>Ed Kollada</h5>
-                                                    <p>Consultant</p>
-                                                    <div class="more_details">
-                                                        <a class="btn btn-sm" href="#">More Details</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="image_zoom_in">
-                                            <a class="gallery_img" href=""><i class="pe-7s-expand1" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
+
 
 
 
@@ -422,6 +406,29 @@
 
 
 
+                                <!-- Single gallery Item Start -->
+                                <div class="col-12 col-md-4 col-lg-3 column_single_gallery_item mb-30 wow fadeInUp consultant">
+                                    <img src="{{ asset('img/employee-images/Kollada_1.jpg')}}" alt="">
+                                    <!-- Single gallery Item hover caption -->
+                                    <div class="hover_overlay">
+                                        <div class="table">
+                                            <div class="table_cell">
+                                                <div class="gallery_info">
+                                                    <h5>Ed Kollada</h5>
+                                                    <p>Consultant</p>
+                                                    <div class="more_details">
+                                                        <a class="btn btn-sm" href="#">More Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="image_zoom_in">
+                                            <a class="gallery_img" href=""><i class="pe-7s-expand1" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
 
 
                                 <!-- Single gallery Item Start -->
@@ -673,89 +680,114 @@
 
     <div id="awards_wrapper">
         <div class="container text-center">
-            <h3>Awards</h3>
+            <h3>Awards and Recognition</h3>
             <hr>
-            <div class="row">
+            <div class="awards_container">
 
-
-                <div class=" col-md-4 col-lg-3  mb-30 wow fadeInUp column_single_gallery_item operations">
-                    <img src="{{ asset('img/bg-img/spa-offer-1.jpg')}}" alt="">
-                    <!-- Single gallery Item hover caption -->
-                    <div class="hover_overlay">
-                        <div class="table">
-                            <div class="table_cell">
-                                <div class="gallery_info">
-                                    <h5>Award 1</h5>
-                                    <p>description</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="image_zoom_in">
-                            <a class="gallery_img" href="{{ asset('img/employee-images/Woodland.jpg')}}"><i class="pe-7s-expand1" aria-hidden="true"></i></a>
-                        </div>
+                <div class="award_item" style="background-image:url(img/awards_logos/401.png);">
+                    <div class="award_item_overlay">
+                        <p>
+                            award description
+                        </p>
                     </div>
                 </div>
 
-
-                <div class=" col-md-4 col-lg-3  mb-30 wow fadeInUp column_single_gallery_item operations">
-                    <img src="{{ asset('img/bg-img/spa-offer-1.jpg')}}" alt="">
-                    <!-- Single gallery Item hover caption -->
-                    <div class="hover_overlay">
-                        <div class="table">
-                            <div class="table_cell">
-                                <div class="gallery_info">
-                                    <h5>Award 2</h5>
-                                    <p>description</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="image_zoom_in">
-                            <a class="gallery_img" href="{{ asset('img/employee-images/Woodland.jpg')}}"><i class="pe-7s-expand1" aria-hidden="true"></i></a>
-                        </div>
+                <div class="award_item" style="background-image:url(img/awards_logos/ch.png);">
+                    <div class="award_item_overlay">
+                        <p>
+                            award description
+                        </p>
                     </div>
                 </div>
 
-
-                <div class=" col-md-4 col-lg-3  mb-30 wow fadeInUp column_single_gallery_item operations">
-                    <img src="{{ asset('img/bg-img/spa-offer-1.jpg')}}" alt="">
-                    <!-- Single gallery Item hover caption -->
-                    <div class="hover_overlay">
-                        <div class="table">
-                            <div class="table_cell">
-                                <div class="gallery_info">
-                                    <h5>Award 3</h5>
-                                    <p>description</p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="image_zoom_in">
-                            <a class="gallery_img" href="{{ asset('img/employee-images/Woodland.jpg')}}"><i class="pe-7s-expand1" aria-hidden="true"></i></a>
-                        </div>
+                <div class="award_item" style="background-image:url(img/awards_logos/ft.png);">
+                    <div class="award_item_overlay">
+                        <p>
+                            award description
+                        </p>
                     </div>
                 </div>
 
-                <div class=" col-md-4 col-lg-3  mb-30 wow fadeInUp column_single_gallery_item operations">
-                    <img src="{{ asset('img/bg-img/spa-offer-1.jpg')}}" alt="">
-                    <!-- Single gallery Item hover caption -->
-                    <div class="hover_overlay">
-                        <div class="table">
-                            <div class="table_cell">
-                                <div class="gallery_info">
-                                    <h5>Award 4</h5>
-                                    <p>description</p>
+                <div class="award_item" style="background-image:url(img/awards_logos/ii.png);">
+                    <div class="award_item_overlay">
+                        <p>
+                            award description
+                        </p>
+                    </div>
+                </div>
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="image_zoom_in">
-                            <a class="gallery_img" href="{{ asset('img/employee-images/Woodland.jpg')}}"><i class="pe-7s-expand1" aria-hidden="true"></i></a>
-                        </div>
+                <div class="award_item" style="background-image:url(img/awards_logos/napa.jpg);">
+                    <div class="award_item_overlay">
+                        <p>
+                            award description
+                        </p>
+                    </div>
+                </div>
+
+                <div class="award_item" style="background-image:url(img/awards_logos/pa.jpg);">
+                    <div class="award_item_overlay">
+                        <p>
+                            award description
+                        </p>
+                    </div>
+                </div>
+
+                <div class="award_item" style="background-image:url(img/awards_logos/ps.png);">
+                    <div class="award_item_overlay">
+                        <p>
+                            award description
+                        </p>
                     </div>
                 </div>
 
 
 
+            </div>
+
+            <div class="awards_text_container">
+                <p>
+                    SRP named as a "Top Mega Team" in PLANADVISER's 2017 Top 100 listing
+                </p>
+
+                <p>
+                    James Worrell recognized by PlanSponsor Magazine as the 2011 Retirement Plan Adviser of the Year
+                </p>
+
+                <p>
+                    Stig Nybo named 5th most influential person in 401kWire’s 100 most Influential people in Defined Contribution
+                </p>
+
+                <p>
+                    Todd Lohman & Craig Dewey named to 401kWire.com list of Top 40 Advisors
+                </p>
+
+                <p>
+                    James Worrell named to 401kWire.com list of Top 100 Advisors
+                </p>
+
+                <p>
+                    Jeff Cullen named as semi-finalist for 2016 NAPA 401(k) Leadership Award
+                </p>
+
+                <p>
+                    Shannon Maloney and Kristen Deevy were each awarded NAPA All Star Award for Top Women Advisors (Top 50) 2015 & 2016. Kristen Deevy, Kelly Majdan, and Lisa Petronio in 2017
+                </p>
+
+                <p>
+                    Craig Dewey, Jeff Cullen, and Kristen Deevy were invited to Capitol Hill to advise top Congressional leaders on the future of the retirement savings industry and how proposed laws and regulations might impact the American worker.
+                </p>
+
+                <p>
+                    Jeff Cullen, Todd Lohman, Shannon Maloney, and Kelly Majdan named by The Financial Times as one of the Top 401 Retirement Advisors of 2016.
+                </p>
+
+                <p>
+                    Kristen Deevy and Kelly Majdan named by The Financial Times as one of the Top 401 Retirement Advisors of 2015
+                </p>
+
+                <p>
+                    James Worrell named in Institutional Investor News as a "Rising Star of Retirement Plan Advisors" in 2007.
+                </p>
 
             </div>
         </div>

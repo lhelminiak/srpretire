@@ -1,0 +1,108 @@
+.grey-background{
+    background-color: #f6f6f6;
+}
+
+hr{
+    border-width: 2px;
+    border-style: solid;
+    border-color: #0093c9;
+    border-radius: 2px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#container{
+    height: 336px;
+}
+
+
+.background-overlay:before{
+    background-color: rgba(0,147,201,0.4);
+}
+
+.page_title h4 {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+}
+
+
+.breadcumb_area{
+    /*padding-top: 0px;*/
+    /*padding-bottom: 0px;*/
+    margin-top: 70px;
+    height: 336px;
+
+}
+
+.breadcumb_section{
+    margin-top: 130px;
+}
+
+.about_intro{
+
+}
+
+.begins_with_conversation{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 414px) {
+
+    .breadcumb_area{
+        height: 200px;
+
+    }
+
+    #container{
+        height: 200px;
+    }
+
+    .breadcumb_section{
+        margin-top: 20px;
+    }
+
+    .page_title h4 {
+        font-size: 2.5rem;
+    }
+
+    .about_intro {
+        padding-bottom: 20px;
+    }
+
+    .about_intro h3 {
+        font-size: 1rem;
+    }
+
+
+    #service_details_wrapper{
+        padding-top: 50px;
+    }
+
+    /*.key_features_text h6 {*/
+    /*font-weight: 300;*/
+
+    /*}*/
+
+    #whatWeDo {
+        text-align: center;
+    }
+
+    #whatWeDoText {
+
+    }
+
+    .defined_contribution_services {
+        text-align: center;
+    }
+
+    .begins_with_conversation{
+        font-size: 18px;
+    }
+
+    .defined_benefit_services{
+        text-align: center;
+    }
+
+
+}

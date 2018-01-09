@@ -55,6 +55,9 @@ hr{
 
 
 
+
+
+
 /* -------------------------------------- */
 
 ol{
@@ -73,6 +76,7 @@ ol ol{
 
 
 .rounded-list a{
+    cursor:default;
     position: relative;
     display: block;
     padding: .4em .4em .4em 2em;

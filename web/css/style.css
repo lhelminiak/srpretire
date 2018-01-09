@@ -1,6 +1,13 @@
-
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
 .srpblue {
     color: #0093c9;
+}
+
+.srp_blue_background {
+    background-color: #0093c9;
 }
 
 .mt10 {

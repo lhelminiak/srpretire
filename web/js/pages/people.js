@@ -112,7 +112,7 @@ $(function() {
     var great_lakes_location = {lat: 41.496977, lng:-88.232714};
     var michigan_location = {lat: 42.420596, lng: -83.472547};
     var mid_atlantic_location = {lat: 37.335150 , lng: -76.734674};
-    var mid_central_location = {lat: 39.086625, lng: -84.505638};
+    //var mid_central_location = {lat: 39.086625, lng: -84.505638};
     var midwest_location = {lat: 41.621519, lng: -93.756550};
     var northeast_location = {lat: 41.824139, lng: -71.409541};
     var northern_california_location = {lat: 37.454368, lng: -122.228481};
@@ -153,10 +153,7 @@ $(function() {
         map: map
     });
 
-    var mid_central_marker = new google.maps.Marker({
-        position: mid_central_location,
-        map: map
-    });
+
 
     var midwest_marker = new google.maps.Marker({
         position: midwest_location,
@@ -475,10 +472,10 @@ $(function() {
 
     });
 
-    mid_central_button.on('click', function () {
-        mid_central_info_window.open();
-
-    });
+    // mid_central_button.on('click', function () {
+    //     mid_central_info_window.open();
+    //
+    // });
 
     midwest_button.on('click', function () {
         midwest_info_window.open();

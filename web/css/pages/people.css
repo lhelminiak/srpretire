@@ -187,8 +187,7 @@
 }
 
 #our_story_wrapper {
-    height: 500px;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 
@@ -202,8 +201,8 @@
     border-style: solid;
     border-color: #0093c9;
     border-radius: 2px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
 
 
 
@@ -212,13 +211,14 @@
 .our_story_content p {
     margin-left: 100px;
     margin-right: 100px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 40px;
 }
 
 #our_team_wrapper{
     background-color: #F5F5F5;
     /*height: 900px;*/
+    padding-bottom: 50px;
 }
 
 #our_team_wrapper h1{
@@ -231,8 +231,8 @@
     border-style: solid;
     border-color: #0093c9;
     border-radius: 2px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-bottom: 50px;
 
 }
@@ -287,7 +287,9 @@
 #location_list{
     overflow-y: scroll;
 }
-
+#awards_wrapper {
+    padding-top: 50px;
+}
 #awards_wrapper h3 {
     font-size: 4.5rem;
 
@@ -298,8 +300,9 @@
     border-style: solid;
     border-color: #0093c9;
     border-radius: 2px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+
 }
 
 #contact-info {
@@ -345,5 +348,66 @@
     margin-top: 40px;
 }
 
+
+
+
+
+.awards_container {
+    width:100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.award_item {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: contain;
+
+    transition: all 0.5s ease;
+}
+
+.award_item_overlay {
+
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+    line-height: 250px;
+
+
+    background-color: rgba(93, 93, 93, 0.5);
+
+
+    opacity: 0;
+
+    transition: all 0.5s ease;
+
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+
+
+.award_item:hover .award_item_overlay {
+    opacity: 1;
+
+}
+
+.awards_text_container {
+    margin-top: 30px;
+}
+
+.awards_text_container p{
+    margin-top: 4px;
+}
 
 

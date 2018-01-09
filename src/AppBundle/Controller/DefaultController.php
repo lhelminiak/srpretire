@@ -65,6 +65,14 @@ class DefaultController extends Controller
         return $this->render('pages/executive_benefits_page/executive-benefits.html.twig', array("title" => "SRP-Executive Benefits"));
     }
 
+
+    /**
+     * @Route("/srp-as-investment-fiduciary", name="srp-as-investment-fiduciary")
+     */
+    public function srpInvestmentPageAction(Request $request){
+        return $this->render('pages/srp_as_investment_fiduciary/srp_as_investment_fiduciary.html.twig', array("title" => "SRP-My Account"));
+    }
+
 //    /**
 //     * @Route("/endowments-foundations", name="endowments-foundations")
 //     */

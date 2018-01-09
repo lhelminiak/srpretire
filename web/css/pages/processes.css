@@ -24,3 +24,62 @@
 .breadcumb_section{
     margin-top: 130px;
 }
+
+
+#what_we_do_container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.what_we_do_item {
+    box-sizing: initial;
+
+    margin:5px;
+    padding-top: 50px;
+    padding-bottom : 50px;
+
+    width: 30%;
+
+    text-align: center;
+    background-color: #0093c9;
+
+    color: white;
+
+    border: white solid 1px;
+
+    transition: all 0.5s ease;
+
+}
+
+.what_we_do_item:hover {
+    transform: scale(1.02);
+
+}
+.what_we_do_item p {
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.what_we_do_item:hover p {
+    opacity: 1;
+
+
+}
+
+.what_we_do_item a {
+    color: white;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.what_we_do_item:hover a {
+    opacity: 1;
+
+}
