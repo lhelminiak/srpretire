@@ -1,0 +1,290 @@
+{% extends 'content_base.html.twig' %}
+
+{% block stylesheets %}
+    <link href="{{ asset('css/pages/join_team.css') }}" rel="stylesheet">
+
+{% endblock %}
+
+
+{% block body %}
+
+    <!-- >>>>>>>>>>>>>>>> Breadcumb Area Start <<<<<<<<<<<<<<<< -->
+    <section class="breadcumb_area background-overlay" style="background-image: url(img/lets-connect.jpg);">
+        <div id="container" class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcumb_section text-center">
+                        <!-- Breadcumb Page Title -->
+                        <div class="page_title">
+                            <h4>Submit Your RFP</h4>
+                        </div>
+                        <!-- Breadcumb Page Pagination -->
+                        <ol class="breadcrumb d-inline-block">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active">Join Our Team</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- >>>>>>>>>>>>>>>> Breadcumb Area End <<<<<<<<<<<<<<<< -->
+
+    <!-- >>>>>>>>>>>>>>>> ESOP/KSOP Details area start <<<<<<<<<<<<<<<< -->
+    <section class="product_landing key_features_area section_padding_100 grey-background">
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-md-7 col-lg-7 item" >
+                    <div class="contact_from">
+                        <form action="mail.php" method="post" id="main_contact_form">
+                            <!-- Message Input Area Start -->
+                            <div class="contact_input_area">
+                                <div id="success_fail_info"></div>
+
+                                <div class="row">
+                                    <div class="col-6">
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name" required>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last Name" required>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="row">
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="company" id="company" placeholder="Company" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your E-mail" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" name="number" id="number" placeholder="Phone Number">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+
+
+
+
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <button type="submit" class="btn default-button-green">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-5 item" style="height: 362px;">
+                    <div class="key_features_text">
+                        <h5>Being an Employer of Choice is a high priority for SRP.  Our two greatest assets are human capital and intellectual capital.  These two assets are joined at the hip.  They are what makes SRP truly unique. We offer:</h5>
+                        <ol class="rounded-list">
+                            <li><a href="#">Competitive Salaries</a></li>
+                            <li><a href="#">Annual Performance Reviews</a></li>
+                            <li><a href="#">Work/Life Balance</a></li>
+                            <li><a href="#">Generous Paid Time Off</a></li>
+                            <li><a href="#">Robust Benefits Package</a></li>
+                            <li><a href="#">Safe harbor 401(k) 6% Match</a></li>
+                            <li><a href="#">Group Medical</a></li>
+                            <li><a href="#">ER HSA Contributions</a></li>
+                            <li><a href="#">Group Dental & Vision</a></li>
+                            <li><a href="#">Group LTD, STD, and Life</a></li>
+
+
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- >>>>>>>>>>>>>>>> Message Now Area Start <<<<<<<<<<<<<<<< -->
+    <section class="message_now_area bg-white section_padding_100_70" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Message Title -->
+                    <div class="message_title">
+                        <!-- Section Heading Start -->
+                        <div class="section_heading">
+                            <p>Drop a line</p>
+                            <h3>Message Now</h3>
+                        </div>
+                    </div>
+
+                    <div class="contact_from">
+                        <form action="mail.php" method="post" id="main_contact_form">
+                            <!-- Message Input Area Start -->
+                            <div class="contact_input_area">
+                                <div id="success_fail_info"></div>
+
+                                <div class="row">
+                                    <div class="col-5">
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name" required>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="col-5">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last Name" required>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="col-2">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Title">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="row">
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="company" id="company" placeholder="Company" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your E-mail" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" name="number" id="number" placeholder="Phone Number">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="city" id="city" placeholder="City" >
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="state" id="state" placeholder="State" >
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" name="zip" id="zip" placeholder="Zip" >
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="primaryContact" id="primaryContact" placeholder="Primary Contact for RFP (if other)" >
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="primaryEmail" id="primaryEmail" placeholder="Email">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" name="primaryNumber" id="primaryNumber" placeholder="Number">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12" style="padding-bottom: 3%;">
+
+
+
+                                        <select style="width: 100%;">
+                                            <option value="">Select Plan Type</option>
+                                            <option value="Defined Contribution">Defined Contribution</option>
+                                            <option value="Defined Benefit">Defined Benefit</option>
+                                            <option value="Nonqualified">Nonqualified</option>
+                                            <option value="Multiple">Multiple</option>
+                                            <option value="Government Entity">Government Entity</option>
+                                            <option value="Foundation of Endowment">Foundation of Endowment</option>
+                                            <option value="Asset Pool">Asset Pool</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+
+                                        {#<div class="dropdown">#}
+                                        {#<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">#}
+                                        {#Plan Type#}
+                                        {#</button>#}
+                                        {#<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">#}
+                                        {#<a class="dropdown-item" href="#">Action</a>#}
+                                        {#<a class="dropdown-item" href="#">Another action</a>#}
+                                        {#<a class="dropdown-item" href="#">Something else here</a>#}
+                                        {#</div>#}
+                                        {#</div>#}
+
+                                    </div>
+
+
+
+
+
+
+
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Details" ></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <button type="submit" class="btn default-button-green">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- >>>>>>>>>>>>>>>> Message Now Area End <<<<<<<<<<<<<<<< -->
+
+
+
+
+{% endblock %}

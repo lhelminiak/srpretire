@@ -71,6 +71,7 @@ hr {
 }
 
 .breadcumb_area {
+    margin-top: 70px;
     height: 336px;
 }
 
@@ -168,6 +169,7 @@ hr {
 }
 
 .ui_box h2 {
+    text-align:center;
     align-self: center;
 }
 

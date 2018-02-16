@@ -1,0 +1,206 @@
+{% extends 'content_base.html.twig' %}
+
+{% block stylesheets %}
+    <link href="{{ asset('css/pages/open_office.css') }}" rel="stylesheet">
+
+{% endblock %}
+
+
+{% block body %}
+
+    <!-- >>>>>>>>>>>>>>>> Breadcumb Area Start <<<<<<<<<<<<<<<< -->
+    <section class="breadcumb_area background-overlay" style="background-image: url(img/lets-connect.jpg);">
+        <div id="container" class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcumb_section text-center">
+                        <!-- Breadcumb Page Title -->
+                        <div class="page_title">
+                            <h4>Become an SRP Advisor</h4>
+                        </div>
+                        <!-- Breadcumb Page Pagination -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- >>>>>>>>>>>>>>>> Breadcumb Area End <<<<<<<<<<<<<<<< -->
+
+
+
+
+    <!-- >>>>>>>>>>>>>>>> Productive Relationships Area Start <<<<<<<<<<<<<<<< -->
+    <section class="productive_relationships_section product_landing key_features_area section_padding_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="key_features_text">
+
+                        <p class="text-center">We are not a tools provider looking for subscribers, but rather a team in search of like-minded teammates.  Our priorities are to find advisors who share our:</p>
+                        <br>
+                        <p>
+                            SRP partners with you to provide outsourced 3(38) solutions to your clients. While several national firms offer this service, there are key differences between the 3(38) solutions SRP professionals provide and the others:
+                        </p><br>
+                        <p>
+                            <strong>Culture</strong> - We have procured a culture of collaboration, meritocracy, and innovation.  It is important that we continue to invite and attract those who share this vision.
+                        </p>
+                        <br>
+                        <p>
+                            <strong>Drive for Growth</strong> - Our advisors are hungry to grow and have the ability to move up market
+                        </p>
+                        <br><p>
+                            <strong>Human Capital</strong> - It is our most important asset.  Finding others that enhance our HC is essential.
+                        </p>
+                        <br>
+                        <br><p>
+                            Whether you are an advisor with 5 years of experience or 5 years from retirement, SRP has the right combination of human and intellectual capital to help you grow and succeed.
+                        </p>
+                    </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="container phase_container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Service Details Content Area -->
+                    <div class="service_details_content">
+                        <!-- Service Details Text Area -->
+
+
+
+                        <div class='ui mx-auto'>
+                            <div id="ui-1" class='ui_box wow fadeInUp' data-wow-delay="0.2s" data-wow-offset="150">
+                                <h2>Operational Support</h2>
+                                <hr>
+                                <p>Put Your Practice on Auto Pilot. The SRP team of Relationship Managers support your clients in the day-to-day admin of their plans and quarterbacks your client service plans.</p>
+                            </div>
+                            <div id="ui-2" class='ui_box wow fadeInUp' data-wow-delay="0.4s" data-wow-offset="150">
+                                <h2>Expand Your Pipeline</h2>
+                                <hr>
+                                <p>Nationally managed campaigns, webinars, newsletters, materials, RFP desk, and content, backed up by elite sales technology, free you up to win more clients.</p>
+
+                            </div>
+
+                            <div id="ui-3" class='ui_box wow fadeInUp' data-wow-delay="0.6s" data-wow-offset="150">
+                                <h2>Elite Consulting</h2>
+                                <hr>
+                                <p>Never walk into a finals again without industry leading solutions for investments, risk management, vendor benchmarking, plan design consulting, participant engagement, and financial wellness.</p>
+                            </div>
+                            <div id="ui-4" class='ui_box wow fadeInUp' data-wow-delay="0.6s" data-wow-offset="150">
+                                <h2>Innovative Technology</h2>
+                                <hr>
+                                <p>Work smarter, faster, and with more clarity with the SRP suite of proprietary and non-proprietary tools.</p>
+
+                            </div>
+                            <div id="ui-5" class='ui_box wow fadeInUp' data-wow-delay="0.6s" data-wow-offset="150">
+                                <h2>Succession Made Easy</h2>
+                                <hr>
+                                <p>The continuity of people your clients know, deliverables your clients appreciate, and a brand your clients trust creates successful outcomes for you when you're ready.</p>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- >>>>>>>>>>>>>>>> ESOP/KSOP Details area start <<<<<<<<<<<<<<<< -->
+    <section class="product_landing key_features_area section_padding_100 grey-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading Start -->
+                    <div class="section_heading wow fadeInUp text-center" style="visibility: visible; animation-name: fadeInUp;">
+                        <h2>Leave Us a Message
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-lg-12 item" >
+                    <div class="contact_from">
+                        <form action="mail.php" method="post" id="main_contact_form">
+                            <!-- Message Input Area Start -->
+                            <div class="contact_input_area">
+                                <div id="success_fail_info"></div>
+
+                                <div class="row">
+                                    <div class="col-6">
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name" required>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last Name" required>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="row">
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="company" id="company" placeholder="Company" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your E-mail" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" name="number" id="number" placeholder="Phone Number">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+
+
+
+
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <button type="submit" class="btn default-button-green">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+{% endblock %}
