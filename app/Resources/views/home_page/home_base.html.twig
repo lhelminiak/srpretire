@@ -5,9 +5,9 @@
     <link href="{{ asset('css/slidea/slidea.css') }}" rel="stylesheet">
     <link href="{{ asset('css/slidea/themes/default.css') }}" rel="stylesheet">
     <link href="{{ asset('css/slidea/ui/default.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/pages/home_page.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/navigation.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/pages/home_page/home_page.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/pages/footer_nav/navigation.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/pages/footer_nav/footer.css') }}" rel="stylesheet">
 
 {% endblock %}
 
@@ -19,7 +19,7 @@
     </div>
 
     <!---- navbar ---->
-    {% include 'navbar.html.twig' %}
+    {% include 'footer_nav/navbar.html.twig' %}
 
     <!---- section-1-carousel ---->
     {% include ':home_page:section-1-carousel.html.twig' %}
@@ -40,7 +40,7 @@
     {% include ':home_page:section-6-blog.html.twig' %}
 
     <!---- footer ---->
-    {% include 'footer.html.twig' %}
+    {% include 'footer_nav/footer.html.twig' %}
 
 
 {% endblock %}

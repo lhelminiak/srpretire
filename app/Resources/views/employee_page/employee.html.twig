@@ -1,0 +1,83 @@
+{% extends 'content_base.html.twig' %}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" href="{{ asset('css/pages/employee_page/employee.css') }}">
+
+
+{% endblock %}
+
+
+{% block body %}
+
+
+    <div class="employee-header">
+        <div class="employee-info">
+            <div class="employee-info-text">
+                {% block first %}
+
+
+
+
+                {% endblock %}
+                {% block last %}
+
+
+
+
+                {% endblock %}
+                {% block position %}
+
+
+
+
+                {% endblock %}
+            </div>
+
+        </div>
+
+        <div class="employee-picture">
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="employee-bio-container">
+        <div class="employee-bio-body">
+            <div class="employee-bio-text">
+                {% block bio %}
+
+
+
+
+                {% endblock %}
+
+            </div>
+            <div class="bio-divider">
+
+            </div>
+            <div class="employee-bio-questions">
+                {% block questions %}
+
+                {% endblock %}
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('js/pages/retirement-plan-consulting.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,267 @@
+{% extends 'content_base.html.twig' %}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" href="{{ asset('css/pages/what_we_do/what-we-do.css') }}">
+
+{% endblock %}
+
+{% block body %}
+
+
+
+
+
+
+
+    <!-- >>>>>>>>>>>>>>>> Breadcumb Area Start <<<<<<<<<<<<<<<< -->
+    <section class="breadcumb_area background-overlay" style="background-image: url(img/what_we_do/what_we_do.jpg);">
+        <div id="container" class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcumb_section text-center">
+                        <!-- Breadcumb Page Title -->
+                        <div class="page_title">
+                            <h4>What We Do</h4>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- >>>>>>>>>>>>>>>> Breadcumb Area End <<<<<<<<<<<<<<<< -->
+
+
+    <div id="what_we_do_container" class="container">
+        <div class="what_we_do_item">
+
+            <h2>Retirement Plan Consulting</h2>
+            <p>Description or snippet</p>
+            <a href="/retirement-plan-consulting">learn more</a>
+        </div>
+
+        <div class="what_we_do_item">
+
+            <h2>SRP as Investment Fiduciary</h2>
+            <p>Description or snippet</p>
+            <a href="{{ path('srp-as-investment-fiduciary') }}">learn more</a>
+        </div>
+
+        <div class="what_we_do_item">
+
+            <h2>Executive Benefits</h2>
+            <p>Recruit, Retain, and Reward your Key people</p>
+            <a href="/executive-benefits">learn more</a>
+        </div>
+
+        <div class="what_we_do_item">
+
+            <h2>Endowments & Foundations</h2>
+            <p>Your Partner in Good Stewardship</p>
+            <a href="{{ path('endowments-foundations') }}">learn more</a>
+        </div>
+
+        <div class="what_we_do_item">
+
+            <h2>HSA</h2>
+            <p>A Natural Extension of Your Retirement Benefit</p>
+            <a href="{{ path('hsa') }}">learn more</a>
+        </div>
+
+        <div class="what_we_do_item">
+
+            <h2>Wealth Management</h2>
+            <p>Design Your Financial Future</p>
+                <a href="#">learn more</a>
+        </div>
+
+    </div>
+
+
+
+    {#<!-- >>>>>>>>>>>>>>>> Retirement Plan Consulting Start <<<<<<<<<<<<<<<< -->#}
+    {#<section class="about_area section_padding_100" id="about">#}
+        {#<div class="container">#}
+            {#<div class="about_us_area">#}
+                {#<div class="row">#}
+                    {#<!-- About Us Area -->#}
+                    {#<div class="col-12 col-lg-6 wow fadeInLeft">#}
+                        {#<!-- About Us Text Start -->#}
+                        {#<div class="about_us_text">#}
+                            {#<h3>Retirement Plan Consulting</h3>#}
+                            {#<p>At Strategic Retirement Partners, we are different.  We focus exclusively on your Retirement Plans, and issues related to them.  We don’t sell money management services or insurance, we focus our time on making your plan better and your life easier.</p>#}
+                            {#<p>Whether it is a Defined Benefit or ESOP plan, a Profit Sharing Plan or a 401(K), we are your outsourced experts.</p>#}
+                            {#<a href="/retirement-plan-consulting" class="btn default-button-green">Learn More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>#}
+                        {#</div>#}
+                    {#</div>#}
+                    {#<div class="col-12 col-lg-6">#}
+                        {#<div class="about_us_one wow fadeInRight sm-mt-30 xs-mt-30">#}
+                            {#<img class="img-fluid" src="img/bg-img/about-us-2.jpg" alt="">#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+    {#</section>#}
+    {#<!-- >>>>>>>>>>>>>>>> Retirement Plan Consulting End <<<<<<<<<<<<<<<< -->#}
+
+    {#<!-- >>>>>>>>>>>>>>>> Outsourced 3(38) Start <<<<<<<<<<<<<<<< -->#}
+    {#<section class="about_area section_padding_100" id="about">#}
+        {#<div class="container">#}
+            {#<div class="about_us_area">#}
+                {#<div class="row">#}
+                    {#<!-- About Us Area -->#}
+                    {#<div class="col-12 col-lg-6 wow fadeInLeft">#}
+                        {#<!-- About Us Text Start -->#}
+                        {#<div class="about_us_text">#}
+                            {#<h3>SRP as 3(38)</h3>#}
+                            {#<p>SRP partners with other advisors to provide outsources 3(38) solutions. Key#}
+                                {#differences between the 3(38) solutions SRP professional provide and others:</p>#}
+                            {#<p><span style="font-weight: 400">Personalized Experience</span> - We tailor our lineups to the needs of the advisor, participant#}
+                                {#demographics, and plan sponsor. There is no “one size fits all” mentality here.</p>#}
+                            {#<p><span style="font-weight: 400">Fiduciary Protection</span> - We provide essential 404(c) protection by assuming fiduciary#}
+                                {#responsibility for mapping strategies.</p>#}
+                            {#<p><span style="font-weight: 400">Partnership</span> - As your partner in client service, we will have a mutual confidentiality and#}
+                                {#non-solicit to protect your client relationships, tailoring our service model to complement#}
+                                {#your offering.</p>#}
+                            {#<a href="#" class="btn default-button-green">Learn More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>#}
+                        {#</div>#}
+                    {#</div>#}
+                    {#<div class="col-12 col-lg-6">#}
+                        {#<div class="about_us_one wow fadeInRight sm-mt-30 xs-mt-30">#}
+                            {#<img  class="img-fluid" src="img/bg-img/about-us-2.jpg" alt="">#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+    {#</section>#}
+    {#<!-- >>>>>>>>>>>>>>>> Outsourced 3(38) End <<<<<<<<<<<<<<<< -->#}
+
+
+
+
+    {#<!-- >>>>>>>>>>>>>>>> Executive Benefits Start <<<<<<<<<<<<<<<< -->#}
+    {#<section class="about_area section_padding_100" id="about">#}
+        {#<div class="container">#}
+            {#<div class="about_us_area">#}
+                {#<div class="row">#}
+                    {#<!-- About Us Area -->#}
+                    {#<div class="col-12 col-lg-6">#}
+                        {#<div class="about_us_one wow fadeInLeft sm-mt-30 xs-mt-30">#}
+                            {#<img class="img-fluid"  src="img/bg-img/about-us-2.jpg" alt="">#}
+                        {#</div>#}
+                    {#</div>#}
+                    {#<div class="col-12 col-lg-6 wow fadeInRight">#}
+                        {#<!-- About Us Text Start -->#}
+                        {#<div class="about_us_text">#}
+                            {#<h3>Executive Benefits</h3>#}
+                            {#<p>Aligning the strategic goals of your organization with your retirement plan offering is essential to a strong and impactful total rewards program. Implementing a forward-thinking Executive Benefits Plan will help you recruit, retain, and reward your key people, while reinforcing corporate strategic goals and values.</p>#}
+                            {#<p>Our holistic approach to retirement plan consulting will help you create efficiencies in each plan separately and collectively. One such area is participant education. Traditional 401(k) and 403(b) contribution limits creating funding gaps for executives in retirement. With SRP’s help, your executive team will have a better understanding of, appreciation of, and outcomes generated by your retirement plan offering.</p>#}
+                            {#<a href="{{ path('executive-benefits') }}" class="btn default-button-green">Learn More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>#}
+                        {#</div>#}
+                    {#</div>#}
+
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+    {#</section>#}
+    {#<!-- >>>>>>>>>>>>>>>> Executive Benefits End <<<<<<<<<<<<<<<< -->#}
+
+
+
+
+
+    {#<!-- >>>>>>>>>>>>>>>> Endowments & Foundations Start <<<<<<<<<<<<<<<< -->#}
+    {#<section class="about_area section_padding_100" id="about">#}
+        {#<div class="container">#}
+            {#<div class="about_us_area">#}
+                {#<div class="row">#}
+                    {#<!-- About Us Area -->#}
+                    {#<div class="col-12 col-lg-6">#}
+                        {#<div class="about_us_one wow fadeInLeft sm-mt-30 xs-mt-30">#}
+                            {#<img class="img-fluid"  src="img/bg-img/about-us-2.jpg" alt="">#}
+                        {#</div>#}
+                    {#</div>#}
+                    {#<div class="col-12 col-lg-6 wow fadeInRight">#}
+                        {#<!-- About Us Text Start -->#}
+                        {#<div class="about_us_text">#}
+                            {#<h3>Endowments & Foundations</h3>#}
+                            {#<p> to be filled in</p>#}
+                            {#<p> to be filled in</p>#}
+                            {#<a href="#" class="btn default-button-green">Learn More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>#}
+                        {#</div>#}
+                    {#</div>#}
+
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+    {#</section>#}
+    {#<!-- >>>>>>>>>>>>>>>> Endowments & Foundations End <<<<<<<<<<<<<<<< -->#}
+
+
+
+
+    {#<!-- >>>>>>>>>>>>>>>> HSA Start <<<<<<<<<<<<<<<< -->#}
+    {#<section class="about_area section_padding_100" id="about">#}
+        {#<div class="container">#}
+            {#<div class="about_us_area">#}
+                {#<div class="row">#}
+                    {#<!-- About Us Area -->#}
+                    {#<div class="col-12 col-lg-6 wow fadeInLeft">#}
+                        {#<!-- About Us Text Start -->#}
+                        {#<div class="about_us_text">#}
+                            {#<h3>HSA</h3>#}
+                            {#<p> to be filled in</p>#}
+                            {#<p> to be filled in</p>#}
+                            {#<a href="#" class="btn default-button-green">Learn More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>#}
+                        {#</div>#}
+                    {#</div>#}
+                    {#<div class="col-12 col-lg-6">#}
+                        {#<div class="about_us_one wow fadeInRight sm-mt-30 xs-mt-30">#}
+                            {#<img  class="img-fluid" src="img/bg-img/about-us-2.jpg" alt="">#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+    {#</section>#}
+    {#<!-- >>>>>>>>>>>>>>>> HSA End <<<<<<<<<<<<<<<< -->#}
+
+    {#<!-- >>>>>>>>>>>>>>>> Wealth Management Start <<<<<<<<<<<<<<<< -->#}
+    {#<section class="about_area section_padding_100" id="about">#}
+        {#<div class="container">#}
+            {#<div class="about_us_area">#}
+                {#<div class="row">#}
+                    {#<!-- About Us Area -->#}
+
+                    {#<div class="col-12 col-lg-6 wow fadeInLeft">#}
+                        {#<!-- About Us Text Start -->#}
+                        {#<div class="about_us_text">#}
+                            {#<h3>Wealth Management</h3>#}
+                            {#<p> to be filled in</p>#}
+                            {#<p> to be filled in</p>#}
+                            {#<a href="#" class="btn default-button-green">Learn More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>#}
+                        {#</div>#}
+                    {#</div>#}
+                    {#<div class="col-12 col-lg-6">#}
+                        {#<div class="about_us_one wow fadeInRight sm-mt-30 xs-mt-30">#}
+                            {#<img  class="img-fluid" src="img/bg-img/about-us-2.jpg" alt="">#}
+                        {#</div>#}
+                    {#</div>#}
+
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+    {#</section>#}
+    {#<!-- >>>>>>>>>>>>>>>> Wealth Management End <<<<<<<<<<<<<<<< -->#}
+
+
+{% endblock %}
+
+{% block javascripts %}
+
+    <script type="text/javascript" src="{{ asset('js/pages/processes.js') }}"></script>
+
+{% endblock %}

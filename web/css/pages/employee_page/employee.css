@@ -1,0 +1,75 @@
+.employee-header {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: stretch;
+
+    height: 400px;
+
+    margin-top: 70px;
+}
+
+.employee-info {
+    flex-grow: 3;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0093c9;
+    color:white;
+
+    border-right: solid white 4px;
+}
+
+.employee-info-text {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.employee-picture {
+    flex-grow: 5;
+
+    background-image: url(../../../img/services-img/service-9.jpg);
+    background-size: cover;
+
+}
+
+
+
+
+.employee-bio-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    margin-top: 50px;
+}
+
+.employee-bio-body{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+
+.employee-bio-text {
+    width: 600px;
+    height: 600px;
+    background-color: red;
+    margin-right: 25px;
+}
+
+.bio-divider {
+    height: 600px;
+    border-left: solid #0093c9 2px;
+}
+
+.employee-bio-questions {
+    width: 200px;
+    height: 650px;
+    background-color: blue;
+    margin-left: 25px;
+}

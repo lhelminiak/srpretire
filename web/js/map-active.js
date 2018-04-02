@@ -1,3 +1,4 @@
+function initMap() {
     var map;
     var latlng = new google.maps.LatLng(41.9028, 12.4964);
     var stylez = [{
@@ -39,3 +40,4 @@
     });
     map.mapTypes.set('gMap', mapType);
     map.setMapTypeId('gMap');
+}

@@ -1,4 +1,4 @@
-$(function() {
+function initMap() {
 
     // var arkansas_button = $('#arkansas');
     var central_florida_button = $('#central_florida');
@@ -13,34 +13,9 @@ $(function() {
     var oklahoma_button = $('#oklahoma');
     var rocky_mountains_button = $('#rocky_mountains');
     var wisconsin_button = $('#wisconsin');
-
-
-
-
-
-
     var mapStyle = [
         {
-            "featureType": "administrative",
-            "elementType": "labels.text.fill",
-            "stylers": [
-                {
-                    "color": "#444444"
-                }
-            ]
-        },
-        {
-            "featureType": "landscape",
-            "elementType": "all",
-            "stylers": [
-                {
-                    "color": "#f2f2f2"
-                }
-            ]
-        },
-        {
-            "featureType": "poi",
-            "elementType": "all",
+            "elementType": "labels.text",
             "stylers": [
                 {
                     "visibility": "off"
@@ -48,29 +23,19 @@ $(function() {
             ]
         },
         {
-            "featureType": "road",
-            "elementType": "all",
+            "featureType": "landscape.natural",
+            "elementType": "geometry.fill",
             "stylers": [
                 {
-                    "saturation": -100
+                    "color": "#f5f5f2"
                 },
                 {
-                    "lightness": 45
+                    "visibility": "on"
                 }
             ]
         },
         {
-            "featureType": "road.highway",
-            "elementType": "all",
-            "stylers": [
-                {
-                    "visibility": "simplified"
-                }
-            ]
-        },
-        {
-            "featureType": "road.arterial",
-            "elementType": "labels.icon",
+            "featureType": "administrative",
             "stylers": [
                 {
                     "visibility": "off"
@@ -79,7 +44,144 @@ $(function() {
         },
         {
             "featureType": "transit",
-            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.attraction",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "landscape.man_made",
+            "elementType": "geometry.fill",
+            "stylers": [
+                {
+                    "color": "#ffffff"
+                },
+                {
+                    "visibility": "on"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.business",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.medical",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.place_of_worship",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.school",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.sports_complex",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#ffffff"
+                },
+                {
+                    "visibility": "simplified"
+                }
+            ]
+        },
+        {
+            "featureType": "road.arterial",
+            "stylers": [
+                {
+                    "visibility": "simplified"
+                },
+                {
+                    "color": "#ffffff"
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "labels.icon",
+            "stylers": [
+                {
+                    "color": "#ffffff"
+                },
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "labels.icon",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "road.arterial",
+            "stylers": [
+                {
+                    "color": "#ffffff"
+                }
+            ]
+        },
+        {
+            "featureType": "road.local",
+            "stylers": [
+                {
+                    "color": "#ffffff"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.park",
+            "elementType": "labels.icon",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "poi",
+            "elementType": "labels.icon",
             "stylers": [
                 {
                     "visibility": "off"
@@ -88,15 +190,141 @@ $(function() {
         },
         {
             "featureType": "water",
-            "elementType": "all",
             "stylers": [
                 {
-                    "color": "#46bcec"
+                    "color": "#71c8d4"
+                }
+            ]
+        },
+        {
+            "featureType": "landscape",
+            "stylers": [
+                {
+                    "color": "#e5e8e7"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.park",
+            "stylers": [
+                {
+                    "color": "#8ba129"
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "stylers": [
+                {
+                    "color": "#ffffff"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.sports_complex",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#c7c7c7"
                 },
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "stylers": [
+                {
+                    "color": "#a0d3d3"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.park",
+            "stylers": [
+                {
+                    "color": "#91b65d"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.park",
+            "stylers": [
+                {
+                    "gamma": 1.51
+                }
+            ]
+        },
+        {
+            "featureType": "road.local",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "road.local",
+            "elementType": "geometry",
+            "stylers": [
                 {
                     "visibility": "on"
                 }
             ]
+        },
+        {
+            "featureType": "poi.government",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "landscape",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "labels",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "visibility": "simplified"
+                }
+            ]
+        },
+        {
+            "featureType": "road.local",
+            "stylers": [
+                {
+                    "visibility": "simplified"
+                }
+            ]
+        },
+        {
+            "featureType": "road"
+        },
+        {
+            "featureType": "road"
+        },
+        {},
+        {
+            "featureType": "road.highway"
         }
     ];
 
@@ -152,8 +380,6 @@ $(function() {
         position: mid_atlantic_location,
         map: map
     });
-
-
 
     var midwest_marker = new google.maps.Marker({
         position: midwest_location,
@@ -229,8 +455,6 @@ $(function() {
         fontSize: '15px'
     });
 
-
-
     var great_lakes_info_window = new SnazzyInfoWindow({
         marker: great_lakes_marker,
         placement: 'right',
@@ -251,7 +475,6 @@ $(function() {
         fontColor: '#fff',
         fontSize: '15px'
     });
-
 
     var michigan_info_window = new SnazzyInfoWindow({
         marker: michigan_marker,
@@ -295,27 +518,26 @@ $(function() {
         fontSize: '15px'
     });
 
-
-    var mid_central_info_window = new SnazzyInfoWindow({
-        marker: mid_central_marker,
-        placement: 'right',
-        offset: {
-            left: '20px'
-        },
-        content: '<div>Mid Central</div>' +
-        '<div>500 Garrard Street Covington, KY 41011</div>'+
-        '<div>Phone: 513-602-2868</div>',
-        showCloseButton: false,
-        closeWhenOthersOpen: true,
-        closeOnMapClick: true,
-        padding: '48px',
-        backgroundColor: 'rgba(0, 0, 0, 0.7)',
-        border: false,
-        borderRadius: '0px',
-        shadow: false,
-        fontColor: '#fff',
-        fontSize: '15px'
-    });
+    // var mid_central_info_window = new SnazzyInfoWindow({
+    //     marker: mid_central_marker,
+    //     placement: 'right',
+    //     offset: {
+    //         left: '20px'
+    //     },
+    //     content: '<div>Mid Central</div>' +
+    //     '<div>500 Garrard Street Covington, KY 41011</div>'+
+    //     '<div>Phone: 513-602-2868</div>',
+    //     showCloseButton: false,
+    //     closeWhenOthersOpen: true,
+    //     closeOnMapClick: true,
+    //     padding: '48px',
+    //     backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    //     border: false,
+    //     borderRadius: '0px',
+    //     shadow: false,
+    //     fontColor: '#fff',
+    //     fontSize: '15px'
+    // });
 
     var midwest_info_window = new SnazzyInfoWindow({
         marker: midwest_marker,
@@ -358,7 +580,6 @@ $(function() {
         fontColor: '#fff',
         fontSize: '15px'
     });
-
 
     var northern_california_info_window = new SnazzyInfoWindow({
         marker: northern_california_marker,
@@ -511,4 +732,8 @@ $(function() {
 
 
 
+}
+
+$(function() {
+    initMap();
 });
